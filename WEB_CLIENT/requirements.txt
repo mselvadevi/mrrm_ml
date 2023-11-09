@@ -1,0 +1,11 @@
+wheel
+setuptools
+#pandas
+#numpy
+#
+#textacy
+flask
+gunicorn
+json5
+
+

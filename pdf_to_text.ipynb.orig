@@ -1,0 +1,578 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6c6eb992-b27d-45ee-88b2-3b06c668ebf9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 12,
+=======
+   "execution_count": 14,
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   "id": "ca7e3dd2-3812-4f86-b297-a4bcec370379",
+   "metadata": {
+    "tags": []
+   },
+<<<<<<< HEAD
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.pdf\n"
+     ]
+    }
+   ],
+   "source": [
+    "file_name = r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO\\3.pdf'\n",
+    "# file_name =\"21-123-1930.pdf\"\n",
+    "print(os.path.basename(file_name) )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "17b56523-a236-40e5-92a1-50f2520ccbfb",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "os.listdir()"
+=======
+   "outputs": [],
+   "source": [
+    "file_name = r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO\\3.pdf'\n",
+    "file_name = r'/home/axe/GITHUB/KPO/TO_PROCESS'\n",
+    "# file_name =\"21-123-1930.pdf\"\n",
+    "# file_name=\"3.pdf\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "17b56523-a236-40e5-92a1-50f2520ccbfb",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "ename": "NotADirectoryError",
+     "evalue": "[Errno 20] Not a directory: '3.pdf'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mNotADirectoryError\u001b[0m                        Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[2], line 2\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[38;5;28;01mimport\u001b[39;00m \u001b[38;5;21;01mos\u001b[39;00m\n\u001b[0;32m----> 2\u001b[0m \u001b[43mos\u001b[49m\u001b[38;5;241;43m.\u001b[39;49m\u001b[43mlistdir\u001b[49m\u001b[43m(\u001b[49m\u001b[43mfile_name\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mNotADirectoryError\u001b[0m: [Errno 20] Not a directory: '3.pdf'"
+     ]
+    }
+   ],
+   "source": [
+    "import os\n",
+    "os.listdir(file_name)"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9cc026f7-0048-40d0-af1d-b30e11d9c0cc",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import pdfreader\n",
+    "from pdfreader import PDFDocument, SimplePDFViewer"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "886fe575-91b0-4ecf-870a-4b8dae1aade7",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+<<<<<<< HEAD
+    "with open(file_name, \"rb\") as fd:\n",
+    "    doc = PDFDocument(fd)"
+=======
+    "# with open(file_name, \"rb\") as fd:\n",
+    "#     doc = PDFDocument(fd)"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ebad9d47-53cf-4f46-aaef-5f61535c37b7",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+<<<<<<< HEAD
+    "poppler_path=r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO\\poppler-0.68.0\\bin'\n",
+    "print(poppler_path)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "42cfb2d5-5800-46bf-b25e-4e315736d2aa",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import os\n",
+    "!dir"
+=======
+    "# poppler_path=r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO\\poppler-0.68.0\\bin'\n",
+    "# print(poppler_path)"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "69868607-6d2d-480e-8f0b-4db0c1075e21",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+<<<<<<< HEAD
+    "import pytesseract\n",
+    "from pdf2image import convert_from_path\n",
+    "import glob\n",
+    "\n",
+    "pdfs = glob.glob(file_name)\n",
+    "print(pdfs)\n",
+    "for pdf_path in pdfs:\n",
+    "    pages = convert_from_path(pdf_path, 500,poppler_path = poppler_path )\n",
+    "\n",
+    "    for pageNum,imgBlob in enumerate(pages):\n",
+    "        text = pytesseract.image_to_string(imgBlob,lang='eng')\n",
+    "\n",
+    "        with open(f'{pdf_path[:-4]}_page{pageNum}.txt', 'w') as the_file:\n",
+    "            the_file.write(text)"
+=======
+    "# import pytesseract\n",
+    "# from pdf2image import convert_from_path\n",
+    "# import glob\n",
+    "\n",
+    "# pdfs = glob.glob(file_name)\n",
+    "# print(f\"filename:{file_name}\")\n",
+    "# print(\"pdfs:\",pdfs)\n",
+    "# for pdf_path in pdfs:\n",
+    "#     pages = convert_from_path(pdf_path, 500, )\n",
+    "\n",
+    "#     for pageNum,imgBlob in enumerate(pages):\n",
+    "#         text = pytesseract.image_to_string(imgBlob,lang='eng')\n",
+    "\n",
+    "#         with open(f'{pdf_path[:-4]}_page{pageNum}.txt', 'w') as the_file:\n",
+    "#             the_file.write(text)"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+<<<<<<< HEAD
+   "execution_count": 11,
+=======
+   "execution_count": null,
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   "id": "590f2235-475d-4211-a8fb-6b8fc23fec3a",
+   "metadata": {
+    "tags": []
+   },
+<<<<<<< HEAD
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'poppler_path' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[11], line 10\u001b[0m\n\u001b[0;32m      8\u001b[0m             \u001b[38;5;28;01mfor\u001b[39;00m page \u001b[38;5;129;01min\u001b[39;00m pages:                    \n\u001b[0;32m      9\u001b[0m                 page\u001b[38;5;241m.\u001b[39msave(os\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mjoin(path,file\u001b[38;5;241m.\u001b[39mlower()\u001b[38;5;241m.\u001b[39mreplace(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m.pdf\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m.jpg\u001b[39m\u001b[38;5;124m\"\u001b[39m)),\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mJPEG\u001b[39m\u001b[38;5;124m'\u001b[39m)    \n\u001b[1;32m---> 10\u001b[0m \u001b[43mspliting_pdf2img\u001b[49m\u001b[43m(\u001b[49m\u001b[43m \u001b[49m\u001b[43mpath\u001b[49m\u001b[43m)\u001b[49m\n",
+      "Cell \u001b[1;32mIn[11], line 7\u001b[0m, in \u001b[0;36mspliting_pdf2img\u001b[1;34m(path)\u001b[0m\n\u001b[0;32m      5\u001b[0m \u001b[38;5;28;01mfor\u001b[39;00m file \u001b[38;5;129;01min\u001b[39;00m os\u001b[38;5;241m.\u001b[39mlistdir(path):\n\u001b[0;32m      6\u001b[0m     \u001b[38;5;28;01mif\u001b[39;00m file\u001b[38;5;241m.\u001b[39mlower()\u001b[38;5;241m.\u001b[39mendswith(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m.pdf\u001b[39m\u001b[38;5;124m\"\u001b[39m):\n\u001b[1;32m----> 7\u001b[0m         pages \u001b[38;5;241m=\u001b[39m convert_from_path(os\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mjoin(path,file), \u001b[38;5;241m500\u001b[39m,poppler_path\u001b[38;5;241m=\u001b[39m \u001b[43mpoppler_path\u001b[49m)\n\u001b[0;32m      8\u001b[0m         \u001b[38;5;28;01mfor\u001b[39;00m page \u001b[38;5;129;01min\u001b[39;00m pages:                    \n\u001b[0;32m      9\u001b[0m             page\u001b[38;5;241m.\u001b[39msave(os\u001b[38;5;241m.\u001b[39mpath\u001b[38;5;241m.\u001b[39mjoin(path,file\u001b[38;5;241m.\u001b[39mlower()\u001b[38;5;241m.\u001b[39mreplace(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m.pdf\u001b[39m\u001b[38;5;124m\"\u001b[39m,\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124m.jpg\u001b[39m\u001b[38;5;124m\"\u001b[39m)),\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mJPEG\u001b[39m\u001b[38;5;124m'\u001b[39m)\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'poppler_path' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "    \n",
+    "path =  r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO'\n",
+    "\n",
+    "def spliting_pdf2img( path):\n",
+    "    from pdf2image import convert_from_path, convert_from_bytes\n",
+    "    for file in os.listdir(path):\n",
+    "        if file.lower().endswith(\".pdf\"):\n",
+    "            pages = convert_from_path(os.path.join(path,file), 500,poppler_path= poppler_path)\n",
+    "            for page in pages:                    \n",
+    "                page.save(os.path.join(path,file.lower().replace(\".pdf\",\".jpg\")),'JPEG')    \n",
+    "spliting_pdf2img( path)"
+=======
+   "outputs": [],
+   "source": [
+    "    \n",
+    "# path =  r'C:\\Users\\murugesan_r\\OneDrive - Prelude Systems Inc\\PRELUDESYS\\GITHUB\\KPO'\n",
+    "\n",
+    "# def spliting_pdf2img( path):\n",
+    "#     from pdf2image import convert_from_path, convert_from_bytes\n",
+    "#     for file in os.listdir(path):\n",
+    "#         if file.lower().endswith(\".pdf\"):\n",
+    "#             pages = convert_from_path(os.path.join(path,file), 500,poppler_path= poppler_path)\n",
+    "#             for page in pages:                    \n",
+    "#                 page.save(os.path.join(path,file.lower().replace(\".pdf\",\".jpg\")),'JPEG')    \n",
+    "# spliting_pdf2img( path)"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c6be6da-1ea1-4464-8da7-0f62a3749e1f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "66586270-9df7-4ed3-84ea-ef6d39c6f41f",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+<<<<<<< HEAD
+    "import os\n",
+    "import io\n",
+    "from PIL import Image\n",
+    "import pytesseract\n",
+    "from wand.image import Image as wi\n",
+    "import gc\n",
+    "\n",
+    "\n",
+    "pdf_path = \"3.pdf\"\n",
+    "pdf=wi(filename=file_name,resolution=300)\n",
+    "pdfImg=pdf.convert('jpeg')\n",
+    "\n",
+    "imgBlobs=[]\n",
+    "extracted_text=[]\n",
+    "\n",
+    "def Get_text_from_image(pdf_path):\n",
+    "    pdf=wi(filename=pdf_path,resolution=300)\n",
+    "    pdfImg=pdf.convert('jpeg')\n",
+    "    imgBlobs=[]\n",
+    "    extracted_text=[]\n",
+    "    for img in pdfImg.sequence:\n",
+    "        page=wi(image=img)\n",
+    "        imgBlobs.append(page.make_blob('jpeg'))\n",
+    "\n",
+    "    for imgBlob in imgBlobs:\n",
+    "        im=Image.open(io.BytesIO(imgBlob))\n",
+    "        text=pytesseract.image_to_string(im,lang='eng')\n",
+    "        extracted_text.append(text)\n",
+    "\n",
+    "    return (extracted_text)"
+=======
+    "# import os\n",
+    "# import io\n",
+    "# from PIL import Image\n",
+    "# import pytesseract\n",
+    "# from wand.image import Image as wi\n",
+    "# import gc\n",
+    "\n",
+    "\n",
+    "# pdf_path = \"3.pdf\"\n",
+    "# pdf=wi(filename=pdf_path,resolution=300)\n",
+    "# pdfImg=pdf.convert('jpeg')\n",
+    "\n",
+    "# imgBlobs=[]\n",
+    "# extracted_text=[]\n",
+    "\n",
+    "# def Get_text_from_image(pdf_path):\n",
+    "#     pdf=wi(filename=pdf_path,resolution=300)\n",
+    "#     pdfImg=pdf.convert('jpeg')\n",
+    "#     imgBlobs=[]\n",
+    "#     extracted_text=[]\n",
+    "#     for img in pdfImg.sequence:\n",
+    "#         page=wi(image=img)\n",
+    "#         imgBlobs.append(page.make_blob('jpeg'))\n",
+    "\n",
+    "#     for imgBlob in imgBlobs:\n",
+    "#         im=Image.open(io.BytesIO(imgBlob))\n",
+    "#         text=pytesseract.image_to_string(im,lang='eng')\n",
+    "#         extracted_text.append(text)\n",
+    "\n",
+    "#     return (extracted_text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "375a26ac-be46-43fd-8aa4-7afa9026db42",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "67ba3baf-813c-4083-a971-5b9d75f2c97a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import json\n",
+    "import base64\n",
+    "import pytesseract\n",
+    "from pdf2image import convert_from_path\n",
+    "import glob\n",
+    "import shutil"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "0356dfc0-b976-4420-b6dd-b5e600883539",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "file_name_without_extension:/home/axe/GITHUB/KPO/TO_PROCESS/3.json,file:/home/axe/GITHUB/KPO/TO_PROCESS/3.pdf\n",
+      "/home/axe/GITHUB/KPO/TO_PROCESS/3.pdf\n",
+      "pdfs: ['/home/axe/GITHUB/KPO/TO_PROCESS/3.pdf']\n",
+      "json_file: /home/axe/GITHUB/KPO/OCR_PAGES/3.json\n"
+     ]
+    }
+   ],
+   "source": [
+    "def ocr_dir(directory):\n",
+    "    pdf_files = [ os.path.join(directory,file) for  file in os.listdir(directory) if file.endswith(\".pdf\")]\n",
+    "    if not pdf_files: return -1\n",
+    "    for file in pdf_files:\n",
+    "        file_name = os.path.basename(file)\n",
+    "        file_name_without_extension = os.path.join(directory,file_name.rpartition(\".\")[0] + \".json\")\n",
+    "        if os.path.isfile(file_name_without_extension):\n",
+    "            print(f\"file_name_without_extension:{file_name_without_extension},file:{file}\")\n",
+    "            ocr_extraction(file,file_name_without_extension)\n",
+    "ocr_dir(directory=file_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "9d169414-ef47-4a09-a337-569fefe8ee67",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "def ocr_extraction(abs_file_name,data_file):\n",
+    "    if abs_file_name is None : return -1\n",
+    "    # pdfFile = wi(filename = abs_file_name, resolution = 300)\n",
+    "    data_json_list = None\n",
+    "    with open(data_file, \"r\") as fp:   \n",
+    "        data_json_list = json.load(fp)\n",
+    "    if data_json_list is None: return -1\n",
+    "    pdfs = glob.glob(abs_file_name)\n",
+    "    print(abs_file_name)\n",
+    "    print(\"pdfs:\",pdfs)\n",
+    "    for pdf_path in pdfs:\n",
+    "        pages = convert_from_path(pdf_path, 500)\n",
+    "    content_page_wise = []    \n",
+    "    for index,imgBlob in enumerate(pages):\n",
+    "        text = pytesseract.image_to_string(imgBlob,lang='eng')\n",
+    "        # print(base64.b64encode(bytearray(imgBlob) ))\n",
+    "        t ={ \"pagenumber\" : index,\n",
+    "            \"category\":data_json_list[index].get(\"category\"),\n",
+    "            \n",
+    "            \"Data\": data_json_list[index].get(\"Data\"),\n",
+    "            \n",
+    "            \"ImageText\" : text,\n",
+    "            \n",
+    "            \"Isstart\":data_json_list[index].get(\"Isstart\")\n",
+    "            \n",
+    "           }\n",
+    "        content_page_wise.append(t)\n",
+    "    converted_ocr_base_dir = \"/home/axe/GITHUB/KPO/OCR_PAGES/\"\n",
+    "    file_name = os.path.basename(abs_file_name)\n",
+    "    file_name_without_extension = os.path.join(converted_ocr_base_dir,file_name.rpartition(\".\")[0] + \".json\")\n",
+    "    print(\"json_file:\",file_name_without_extension)\n",
+    "    with open(file_name_without_extension,\"w\") as fp:\n",
+    "        json.dump(content_page_wise,fp,indent=4)\n",
+    "        shutil.move(abs_file_name,r\"/home/axe/GITHUB/KPO/PROCESSED\")\n",
+    "    return content_page_wise\n",
+    "# ocr_extraction(abs_file_name=r'/home/axe/GITHUB/KPO/3.pdf')"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+<<<<<<< HEAD
+   "id": "9d169414-ef47-4a09-a337-569fefe8ee67",
+=======
+   "id": "bed773d8-25bf-4faf-a05f-6ecc0477f437",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# import pytesseract\n",
+    "# from pdf2image import convert_from_path\n",
+    "# import glob\n",
+    "\n",
+    "# pdfs = glob.glob(r\"3.PDF\")\n",
+    "\n",
+    "# for pdf_path in pdfs:\n",
+    "#     pages = convert_from_path(pdf_path, 500)\n",
+    "\n",
+    "#     for pageNum,imgBlob in enumerate(pages):\n",
+    "#         text = pytesseract.image_to_string(imgBlob,lang='eng')\n",
+    "#         print(text)\n",
+    "#         with open(f'{pdf_path[:-4]}_page{pageNum}.txt', 'w') as the_file:\n",
+    "#             the_file.write(text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b1242d57-66f4-43f9-9e44-80236b45e3ed",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2221043c-4499-46d4-b102-30151962a00b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# import os\n",
+    "# file_name = \"3.pdf\"\n",
+    "# import pdfreader\n",
+    "# from pdfreader import PDFDocument, SimplePDFViewer\n",
+    "# fd= open(file_name, \"rb\")\n",
+    "# viewer = SimplePDFViewer(fd)\n",
+    "# print(\"welcome\")\n",
+    "# print(viewer.metadata)\n",
+    "# print(viewer.render())\n",
+    "# print(viewer.canvas.strings)\n",
+    "\n",
+    "# for canvas in viewer:\n",
+    "#     page_images = canvas.images\n",
+    "#     page_forms = canvas.forms\n",
+    "#     page_text = canvas.text_content\n",
+    "#     page_inline_images = canvas.inline_images\n",
+    "#     page_strings = canvas.strings\n",
+    "#     text = pytesseract.image_to_string(page_images,lang='eng')\n",
+    "#     print(text)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0553ba53-3c23-4e99-b421-e6d261c7026d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8cdc6798-0e17-437a-b7cc-0a2d9ce6645b",
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# import io\n",
+    "# from PIL import Image\n",
+    "# import pytesseract\n",
+    "# from wand.image import Image as wi\n",
+    "\n",
+    "# #         print(text)\n",
+    "# #         with open(f'{pdf_path[:-4]}_page{index}.txt', 'w') as the_file:\n",
+    "# #             the_file.write(text)\n",
+    "            \n",
+    "    \n",
+    "# pdfFile = wi(filename = \"3.pdf\", resolution = 300)\n",
+    "# image = pdfFile.convert('jpeg')\n",
+    "\n",
+    "# imageBlobs = []\n",
+    "\n",
+    "# for img in image.sequence:\n",
+    "# \timgPage = wi(image = img)\n",
+    "# \timageBlobs.append(imgPage.make_blob('jpeg'))\n",
+    "\n",
+    "# extract = []\n",
+    "\n",
+    "# for imgBlob in imageBlobs:\n",
+    "# \timage = Image.open(io.BytesIO(imgBlob))\n",
+    "# \ttext = pytesseract.image_to_string(image, lang = 'eng')\n",
+    "# \textract.append(text)\n",
+    "\n",
+    "# print(extract)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "108778ed-7931-41a4-8a95-cc1063bf8639",
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+<<<<<<< HEAD
+   "version": "3.10.7"
+=======
+   "version": "3.10.6"
+>>>>>>> 49906a72cd9acfca06d7aa4f524b586a910a38cb
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

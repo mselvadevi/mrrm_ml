@@ -1,0 +1,841 @@
+{"label": "TECH_TERM", "pattern":"Account"}
+{"label": "TECH_TERM", "pattern":"Account Assignment Rule"}
+{"label": "TECH_TERM", "pattern":"Account Team"}
+{"label": "TECH_TERM", "pattern":"Activity"}
+{"label": "TECH_TERM", "pattern":"Activity History"}
+{"label": "TECH_TERM", "pattern":"Add on"}
+{"label": "TECH_TERM", "pattern":"Adjustments"}
+{"label": "TECH_TERM", "pattern":"Administrator"}
+{"label": "TECH_TERM", "pattern":"Advanced Function"}
+{"label": "TECH_TERM", "pattern":"Advanced Search"}
+{"label": "TECH_TERM", "pattern":"Age"}
+{"label": "TECH_TERM", "pattern":"Agent"}
+{"label": "TECH_TERM", "pattern":"Agent Console"}
+{"label": "TECH_TERM", "pattern":"AJAX Toolkit"}
+{"label": "TECH_TERM", "pattern":"Alert"}
+{"label": "TECH_TERM", "pattern":"Amount Without Adjustments"}
+{"label": "TECH_TERM", "pattern":"Amount Without Manager Adjustment"}
+{"label": "TECH_TERM", "pattern":"Amount Without Owner Adjustment"}
+{"label": "TECH_TERM", "pattern":"Annuity"}
+{"label": "TECH_TERM", "pattern":"Anonymous Block"}
+{"label": "TECH_TERM", "pattern":"Anonymous Block Apex"}
+{"label": "TECH_TERM", "pattern":"Answers"}
+{"label": "TECH_TERM", "pattern":"Ant Migration Tool"}
+{"label": "TECH_TERM", "pattern":"Anti Join"}
+{"label": "TECH_TERM", "pattern":"Apex"}
+{"label": "TECH_TERM", "pattern":"Apex code"}
+{"label": "TECH_TERM", "pattern":"Apex Connector Framework"}
+{"label": "TECH_TERM", "pattern":"Apex Controller"}
+{"label": "TECH_TERM", "pattern":"Apex Managed Sharing"}
+{"label": "TECH_TERM", "pattern":"Apex Page"}
+{"label": "TECH_TERM", "pattern":"API"}
+{"label": "TECH_TERM", "pattern":"API Version"}
+{"label": "TECH_TERM", "pattern":"App"}
+{"label": "TECH_TERM", "pattern":"App Launcher"}
+{"label": "TECH_TERM", "pattern":"App Menu"}
+{"label": "TECH_TERM", "pattern":"AppExchange"}
+{"label": "TECH_TERM", "pattern":"AppExchange Listing"}
+{"label": "TECH_TERM", "pattern":"AppExchange Publishing Organization"}
+{"label": "TECH_TERM", "pattern":"AppExchange Security Review"}
+{"label": "TECH_TERM", "pattern":"AppExchange Upgrades"}
+{"label": "TECH_TERM", "pattern":"Application"}
+{"label": "TECH_TERM", "pattern":"Application Lifecycle Management"}
+{"label": "TECH_TERM", "pattern":"Application Programming Interface"}
+{"label": "TECH_TERM", "pattern":"Approval"}
+{"label": "TECH_TERM", "pattern":"Approval Action"}
+{"label": "TECH_TERM", "pattern":"Approval process"}
+{"label": "TECH_TERM", "pattern":"Approval Process Diagram"}
+{"label": "TECH_TERM", "pattern":"Approval Request"}
+{"label": "TECH_TERM", "pattern":"Approval Steps"}
+{"label": "TECH_TERM", "pattern":"Approvals in Chatter"}
+{"label": "TECH_TERM", "pattern":"Archived Article"}
+{"label": "TECH_TERM", "pattern":"Article"}
+{"label": "TECH_TERM", "pattern":"Article Manager"}
+{"label": "TECH_TERM", "pattern":"Article Type"}
+{"label": "TECH_TERM", "pattern":"Article Type Layout"}
+{"label": "TECH_TERM", "pattern":"Article Type Template"}
+{"label": "TECH_TERM", "pattern":"Asset"}
+{"label": "TECH_TERM", "pattern":"Assigned Approver"}
+{"label": "TECH_TERM", "pattern":"Assignment"}
+{"label": "TECH_TERM", "pattern":"Asynchronous Calls"}
+{"label": "TECH_TERM", "pattern":"Attachment"}
+{"label": "TECH_TERM", "pattern":"Audience Channel"}
+{"label": "TECH_TERM", "pattern":"Auto Number"}
+{"label": "TECH_TERM", "pattern":"Auto Response Rule"}
+{"label": "TECH_TERM", "pattern":"Autolaunched Flow"}
+{"label": "TECH_TERM", "pattern":"Automated Actions"}
+{"label": "TECH_TERM", "pattern":"Automatic Number Identification"}
+{"label": "TECH_TERM", "pattern":"Automation"}
+{"label": "TECH_TERM", "pattern":"Batch"}
+{"label": "TECH_TERM", "pattern":"Batch Apex"}
+{"label": "TECH_TERM", "pattern":"Batch API"}
+{"label": "TECH_TERM", "pattern":"Bulk API"}
+{"label": "TECH_TERM", "pattern":"Best Answer"}
+{"label": "TECH_TERM", "pattern":"Best Case Amount"}
+{"label": "TECH_TERM", "pattern":"Beta"}
+{"label": "TECH_TERM", "pattern":"Beta Managed Package"}
+{"label": "TECH_TERM", "pattern":"Bi-Directional Sync"}
+{"label": "TECH_TERM", "pattern":"Blank lookup"}
+{"label": "TECH_TERM", "pattern":"Boolean Operators"}
+{"label": "TECH_TERM", "pattern":"Briefcase"}
+{"label": "TECH_TERM", "pattern":"Bucketing"}
+{"label": "TECH_TERM", "pattern":"Bulk API"}
+{"label": "TECH_TERM", "pattern":"Bulk API 2.0"}
+{"label": "TECH_TERM", "pattern":"Business Account"}
+{"label": "TECH_TERM", "pattern":"Calendar"}
+{"label": "TECH_TERM", "pattern":"Call"}
+{"label": "TECH_TERM", "pattern":"Call Center"}
+{"label": "TECH_TERM", "pattern":"Callout"}
+{"label": "TECH_TERM", "pattern":"Callout Apex"}
+{"label": "TECH_TERM", "pattern":"Campaign"}
+{"label": "TECH_TERM", "pattern":"Campaign Hierarchy"}
+{"label": "TECH_TERM", "pattern":"Campaign Member"}
+{"label": "TECH_TERM", "pattern":"Campaign ROI"}
+{"label": "TECH_TERM", "pattern":"Cascading Style Sheet"}
+{"label": "TECH_TERM", "pattern":"Case"}
+{"label": "TECH_TERM", "pattern":"Case Feed"}
+{"label": "TECH_TERM", "pattern":"Case management"}
+{"label": "TECH_TERM", "pattern":"Case Checkout"}
+{"label": "TECH_TERM", "pattern":"Category"}
+{"label": "TECH_TERM", "pattern":"Category Group for Answers"}
+{"label": "TECH_TERM", "pattern":"Category Group for Articles"}
+{"label": "TECH_TERM", "pattern":"Category Ideas"}
+{"label": "TECH_TERM", "pattern":"Category Knowledge and Answers"}
+{"label": "TECH_TERM", "pattern":"Category Solutions"}
+{"label": "TECH_TERM", "pattern":"Channel Manager"}
+{"label": "TECH_TERM", "pattern":"Chart"}
+{"label": "TECH_TERM", "pattern":"Chat"}
+{"label": "TECH_TERM", "pattern":"Chat Console"}
+{"label": "TECH_TERM", "pattern":"Chat Window"}
+{"label": "TECH_TERM", "pattern":"Chatlet"}
+{"label": "TECH_TERM", "pattern":"Chatter"}
+{"label": "TECH_TERM", "pattern":"Chatter Answers"}
+{"label": "TECH_TERM", "pattern":"Chatter Bookmarks"}
+{"label": "TECH_TERM", "pattern":"Chatter Favorite"}
+{"label": "TECH_TERM", "pattern":"Chatter feed"}
+{"label": "TECH_TERM", "pattern":"Chatter Group"}
+{"label": "TECH_TERM", "pattern":"Chatter Mobile"}
+{"label": "TECH_TERM", "pattern":"Checkout"}
+{"label": "TECH_TERM", "pattern":"Child Relationship"}
+{"label": "TECH_TERM", "pattern":"Class"}
+{"label": "TECH_TERM", "pattern":"Class Apex"}
+{"label": "TECH_TERM", "pattern":"Client App"}
+{"label": "TECH_TERM", "pattern":"Clone"}
+{"label": "TECH_TERM", "pattern":"Closed Won Opportunity"}
+{"label": "TECH_TERM", "pattern":"Closed-Loop Reporting"}
+{"label": "TECH_TERM", "pattern":"Cloud Computing"}
+{"label": "TECH_TERM", "pattern":"Code Coverage"}
+{"label": "TECH_TERM", "pattern":"Collapsible Section"}
+{"label": "TECH_TERM", "pattern":"Combination Chart"}
+{"label": "TECH_TERM", "pattern":"Comma Separated Values"}
+{"label": "TECH_TERM", "pattern":"Comment"}
+{"label": "TECH_TERM", "pattern":"Comment Chatter"}
+{"label": "TECH_TERM", "pattern":"Commit Amount"}
+{"label": "TECH_TERM", "pattern":"Communities"}
+{"label": "TECH_TERM", "pattern":"Community"}
+{"label": "TECH_TERM", "pattern":"Community Application"}
+{"label": "TECH_TERM", "pattern":"Community Expert"}
+{"label": "TECH_TERM", "pattern":"Competitor"}
+{"label": "TECH_TERM", "pattern":"Component"}
+{"label": "TECH_TERM", "pattern":"Component Reference"}
+{"label": "TECH_TERM", "pattern":"Component Reference Visualforce"}
+{"label": "TECH_TERM", "pattern":"Component Metadata"}
+{"label": "TECH_TERM", "pattern":"Component Visualforce"}
+{"label": "TECH_TERM", "pattern":"Composite App"}
+{"label": "TECH_TERM", "pattern":"Computer Telephony Integration"}
+{"label": "TECH_TERM", "pattern":"Configurable"}
+{"label": "TECH_TERM", "pattern":"Connect"}
+{"label": "TECH_TERM", "pattern":"Connect for Office"}
+{"label": "TECH_TERM", "pattern":"Connect for Outlook"}
+{"label": "TECH_TERM", "pattern":"Connect Offline"}
+{"label": "TECH_TERM", "pattern":"Connected App"}
+{"label": "TECH_TERM", "pattern":"Connected User"}
+{"label": "TECH_TERM", "pattern":"Connection"}
+{"label": "TECH_TERM", "pattern":"Console Layout"}
+{"label": "TECH_TERM", "pattern":"Console Tab"}
+{"label": "TECH_TERM", "pattern":"Consult Call"}
+{"label": "TECH_TERM", "pattern":"Contact"}
+{"label": "TECH_TERM", "pattern":"Contact Manager Edition"}
+{"label": "TECH_TERM", "pattern":"Contact Role"}
+{"label": "TECH_TERM", "pattern":"Content"}
+{"label": "TECH_TERM", "pattern":"Content Delivery"}
+{"label": "TECH_TERM", "pattern":"Content Pack"}
+{"label": "TECH_TERM", "pattern":"Contract"}
+{"label": "TECH_TERM", "pattern":"Contract Line Item"}
+{"label": "TECH_TERM", "pattern":"Contract Checkout"}
+{"label": "TECH_TERM", "pattern":"Controller"}
+{"label": "TECH_TERM", "pattern":"Controller Extension"}
+{"label": "TECH_TERM", "pattern":"Controller Visualforce"}
+{"label": "TECH_TERM", "pattern":"Controlling Field"}
+{"label": "TECH_TERM", "pattern":"Convert"}
+{"label": "TECH_TERM", "pattern":"Cookie"}
+{"label": "TECH_TERM", "pattern":"Credit Memo"}
+{"label": "TECH_TERM", "pattern":"CRM"}
+{"label": "TECH_TERM", "pattern":"CSS"}
+{"label": "TECH_TERM", "pattern":"CSV"}
+{"label": "TECH_TERM", "pattern":"CTI"}
+{"label": "TECH_TERM", "pattern":"CTI Adapter"}
+{"label": "TECH_TERM", "pattern":"CTI Connector"}
+{"label": "TECH_TERM", "pattern":"CTI System"}
+{"label": "TECH_TERM", "pattern":"Custom App"}
+{"label": "TECH_TERM", "pattern":"Custom Console Component"}
+{"label": "TECH_TERM", "pattern":"Custom Controller"}
+{"label": "TECH_TERM", "pattern":"Custom Field"}
+{"label": "TECH_TERM", "pattern":"Custom Help"}
+{"label": "TECH_TERM", "pattern":"Custom Label"}
+{"label": "TECH_TERM", "pattern":"Custom Links"}
+{"label": "TECH_TERM", "pattern":"Custom metadata"}
+{"label": "TECH_TERM", "pattern":"Custom Object"}
+{"label": "TECH_TERM", "pattern":"Custom Report Type"}
+{"label": "TECH_TERM", "pattern":"Custom S Control"}
+{"label": "TECH_TERM", "pattern":"Custom Settings"}
+{"label": "TECH_TERM", "pattern":"Custom View"}
+{"label": "TECH_TERM", "pattern":"Customer community"}
+{"label": "TECH_TERM", "pattern":"Customer Relationship Management"}
+{"label": "TECH_TERM", "pattern":"Customers"}
+{"label": "TECH_TERM", "pattern":"Customers Chatter"}
+{"label": "TECH_TERM", "pattern":"Dashboard"}
+{"label": "TECH_TERM", "pattern":"Dashboard Builder"}
+{"label": "TECH_TERM", "pattern":"Dashboard Filters"}
+{"label": "TECH_TERM", "pattern":"Data Category for Answers"}
+{"label": "TECH_TERM", "pattern":"Data Category for Articles"}
+{"label": "TECH_TERM", "pattern":"Data Encryption"}
+{"label": "TECH_TERM", "pattern":"Data Encryption Keys"}
+{"label": "TECH_TERM", "pattern":"Data Loader"}
+{"label": "TECH_TERM", "pattern":"Data Manipulation Language"}
+{"label": "TECH_TERM", "pattern":"Data State"}
+{"label": "TECH_TERM", "pattern":"Database"}
+{"label": "TECH_TERM", "pattern":"Database Table"}
+{"label": "TECH_TERM", "pattern":"Database.com"}
+{"label": "TECH_TERM", "pattern":"Date Literal"}
+{"label": "TECH_TERM", "pattern":"Dated Exchange Rates"}
+{"label": "TECH_TERM", "pattern":"Decimal Places"}
+{"label": "TECH_TERM", "pattern":"Delegated Administration"}
+{"label": "TECH_TERM", "pattern":"Delegated Approver"}
+{"label": "TECH_TERM", "pattern":"Delegated Authentication"}
+{"label": "TECH_TERM", "pattern":"Delete"}
+{"label": "TECH_TERM", "pattern":"Demote"}
+{"label": "TECH_TERM", "pattern":"Dependency"}
+{"label": "TECH_TERM", "pattern":"Dependent Field"}
+{"label": "TECH_TERM", "pattern":"Deploy"}
+{"label": "TECH_TERM", "pattern":"Deprecated Component"}
+{"label": "TECH_TERM", "pattern":"Detail"}
+{"label": "TECH_TERM", "pattern":"Detail record"}
+{"label": "TECH_TERM", "pattern":"Detail View"}
+{"label": "TECH_TERM", "pattern":"Developer Edition"}
+{"label": "TECH_TERM", "pattern":"Developer Pro Sandbox"}
+{"label": "TECH_TERM", "pattern":"Developer Sandbox"}
+{"label": "TECH_TERM", "pattern":"Development as a Service"}
+{"label": "TECH_TERM", "pattern":"Development Environment"}
+{"label": "TECH_TERM", "pattern":"Dial Tone Multi Frequency"}
+{"label": "TECH_TERM", "pattern":"Dialed Number Identification Service"}
+{"label": "TECH_TERM", "pattern":"Direct Inward Dial"}
+{"label": "TECH_TERM", "pattern":"Directory Number"}
+{"label": "TECH_TERM", "pattern":"Divisions"}
+{"label": "TECH_TERM", "pattern":"DML"}
+{"label": "TECH_TERM", "pattern":"Document"}
+{"label": "TECH_TERM", "pattern":"Document Library"}
+{"label": "TECH_TERM", "pattern":"Domain"}
+{"label": "TECH_TERM", "pattern":"Draft Article"}
+{"label": "TECH_TERM", "pattern":"Draft Translation"}
+{"label": "TECH_TERM", "pattern":"DreamForce"}
+{"label": "TECH_TERM", "pattern":"Dynamic Dashboard"}
+{"label": "TECH_TERM", "pattern":"Dynamic Visualforce Binding"}
+{"label": "TECH_TERM", "pattern":"Email Alert"}
+{"label": "TECH_TERM", "pattern":"Email Approval Response"}
+{"label": "TECH_TERM", "pattern":"Email marketing"}
+{"label": "TECH_TERM", "pattern":"Email Notification"}
+{"label": "TECH_TERM", "pattern":"Email template"}
+{"label": "TECH_TERM", "pattern":"Encrypted Data at Rest"}
+{"label": "TECH_TERM", "pattern":"Encryption Key"}
+{"label": "TECH_TERM", "pattern":"Encryption Key Management"}
+{"label": "TECH_TERM", "pattern":"Enterprise Application"}
+{"label": "TECH_TERM", "pattern":"Enterprise Edition"}
+{"label": "TECH_TERM", "pattern":"Enterprise WSDL"}
+{"label": "TECH_TERM", "pattern":"Entitlement"}
+{"label": "TECH_TERM", "pattern":"Entitlement Contact"}
+{"label": "TECH_TERM", "pattern":"Entitlement Process"}
+{"label": "TECH_TERM", "pattern":"Entitlement Template"}
+{"label": "TECH_TERM", "pattern":"Entity Relationship Diagram"}
+{"label": "TECH_TERM", "pattern":"Enumeration Field"}
+{"label": "TECH_TERM", "pattern":"ERD"}
+{"label": "TECH_TERM", "pattern":"Event"}
+{"label": "TECH_TERM", "pattern":"Event Series"}
+{"label": "TECH_TERM", "pattern":"Event Sink"}
+{"label": "TECH_TERM", "pattern":"Event Sink CTI"}
+{"label": "TECH_TERM", "pattern":"Experience Cloud"}
+{"label": "TECH_TERM", "pattern":"External Data Source"}
+{"label": "TECH_TERM", "pattern":"External Lookup Relationship"}
+{"label": "TECH_TERM", "pattern":"External Object"}
+{"label": "TECH_TERM", "pattern":"External User"}
+{"label": "TECH_TERM", "pattern":"Facet"}
+{"label": "TECH_TERM", "pattern":"Feature License"}
+{"label": "TECH_TERM", "pattern":"Feed Attachment"}
+{"label": "TECH_TERM", "pattern":"Feed Attachment Chatter"}
+{"label": "TECH_TERM", "pattern":"Feed Filter"}
+{"label": "TECH_TERM", "pattern":"Feed Filter Chatter"}
+{"label": "TECH_TERM", "pattern":"Feed Tracking"}
+{"label": "TECH_TERM", "pattern":"Feed Tracking Chatter"}
+{"label": "TECH_TERM", "pattern":"Field"}
+{"label": "TECH_TERM", "pattern":"Field Dependency"}
+{"label": "TECH_TERM", "pattern":"Field Level Help"}
+{"label": "TECH_TERM", "pattern":"Field Level Security"}
+{"label": "TECH_TERM", "pattern":"Field Sets"}
+{"label": "TECH_TERM", "pattern":"Field Update"}
+{"label": "TECH_TERM", "pattern":"File"}
+{"label": "TECH_TERM", "pattern":"File Collaborator"}
+{"label": "TECH_TERM", "pattern":"File Owner"}
+{"label": "TECH_TERM", "pattern":"File Viewer"}
+{"label": "TECH_TERM", "pattern":"File Private"}
+{"label": "TECH_TERM", "pattern":"File Privately Shared"}
+{"label": "TECH_TERM", "pattern":"File Your Company"}
+{"label": "TECH_TERM", "pattern":"Files Tab"}
+{"label": "TECH_TERM", "pattern":"Filter Condition"}
+{"label": "TECH_TERM", "pattern":"Filter Criteria"}
+{"label": "TECH_TERM", "pattern":"Final Approval Actions"}
+{"label": "TECH_TERM", "pattern":"Final Rejection Actions"}
+{"label": "TECH_TERM", "pattern":"Fiscal Year"}
+{"label": "TECH_TERM", "pattern":"Flag"}
+{"label": "TECH_TERM", "pattern":"Flex Toolkit for Lightning Platform"}
+{"label": "TECH_TERM", "pattern":"Flow"}
+{"label": "TECH_TERM", "pattern":"Flow Builder"}
+{"label": "TECH_TERM", "pattern":"Flow Interview"}
+{"label": "TECH_TERM", "pattern":"Flow Trigger"}
+{"label": "TECH_TERM", "pattern":"Folder"}
+{"label": "TECH_TERM", "pattern":"Follow"}
+{"label": "TECH_TERM", "pattern":"Follow Chatter Answers"}
+{"label": "TECH_TERM", "pattern":"Forecast Amount"}
+{"label": "TECH_TERM", "pattern":"Forecast Category"}
+{"label": "TECH_TERM", "pattern":"Forecast Quantity"}
+{"label": "TECH_TERM", "pattern":"Forecast User"}
+{"label": "TECH_TERM", "pattern":"Forecasting based on projected revenue amounts."}
+{"label": "TECH_TERM", "pattern":"Forecasts"}
+{"label": "TECH_TERM", "pattern":"Foreign Key"}
+{"label": "TECH_TERM", "pattern":"Formula Field"}
+{"label": "TECH_TERM", "pattern":"Full Sandbox"}
+{"label": "TECH_TERM", "pattern":"Function"}
+{"label": "TECH_TERM", "pattern":"Generate Orders"}
+{"label": "TECH_TERM", "pattern":"Get Request"}
+{"label": "TECH_TERM", "pattern":"Getter Methods"}
+{"label": "TECH_TERM", "pattern":"Global Search"}
+{"label": "TECH_TERM", "pattern":"Global Variable"}
+{"label": "TECH_TERM", "pattern":"Gmail"}
+{"label": "TECH_TERM", "pattern":"Google Apps"}
+{"label": "TECH_TERM", "pattern":"Google Docs"}
+{"label": "TECH_TERM", "pattern":"Google Talk"}
+{"label": "TECH_TERM", "pattern":"Governor Limits"}
+{"label": "TECH_TERM", "pattern":"Gregorian Year"}
+{"label": "TECH_TERM", "pattern":"Group"}
+{"label": "TECH_TERM", "pattern":"Group Edition"}
+{"label": "TECH_TERM", "pattern":"Group Task"}
+{"label": "TECH_TERM", "pattern":"Grouping"}
+{"label": "TECH_TERM", "pattern":"Guest User"}
+{"label": "TECH_TERM", "pattern":"Half life"}
+{"label": "TECH_TERM", "pattern":"Hardware Security Module"}
+{"label": "TECH_TERM", "pattern":"Hierarchy"}
+{"label": "TECH_TERM", "pattern":"Hierarchy Custom Settings"}
+{"label": "TECH_TERM", "pattern":"High Volume Portal Users"}
+{"label": "TECH_TERM", "pattern":"Highlights Panel"}
+{"label": "TECH_TERM", "pattern":"Home Organization"}
+{"label": "TECH_TERM", "pattern":"Home Page"}
+{"label": "TECH_TERM", "pattern":"Home Tab"}
+{"label": "TECH_TERM", "pattern":"Hover Detail"}
+{"label": "TECH_TERM", "pattern":"HTML S Control"}
+{"label": "TECH_TERM", "pattern":"HTTP Debugger"}
+{"label": "TECH_TERM", "pattern":"ID"}
+{"label": "TECH_TERM", "pattern":"IDE"}
+{"label": "TECH_TERM", "pattern":"Idea"}
+{"label": "TECH_TERM", "pattern":"Idea Themes"}
+{"label": "TECH_TERM", "pattern":"IdeaExchange"}
+{"label": "TECH_TERM", "pattern":"Ideas"}
+{"label": "TECH_TERM", "pattern":"Images"}
+{"label": "TECH_TERM", "pattern":"Immediate Action"}
+{"label": "TECH_TERM", "pattern":"Import Wizard"}
+{"label": "TECH_TERM", "pattern":"Inbound Call"}
+{"label": "TECH_TERM", "pattern":"Indirect Lookup Relationship"}
+{"label": "TECH_TERM", "pattern":"Influence"}
+{"label": "TECH_TERM", "pattern":"Influence Chatter"}
+{"label": "TECH_TERM", "pattern":"Initial Submission Actions"}
+{"label": "TECH_TERM", "pattern":"Initialization Vector"}
+{"label": "TECH_TERM", "pattern":"Inline S Control"}
+{"label": "TECH_TERM", "pattern":"Insert"}
+{"label": "TECH_TERM", "pattern":"Installed Product"}
+{"label": "TECH_TERM", "pattern":"Instance"}
+{"label": "TECH_TERM", "pattern":"Integrated Development Environment"}
+{"label": "TECH_TERM", "pattern":"Integration Testing"}
+{"label": "TECH_TERM", "pattern":"Integration User"}
+{"label": "TECH_TERM", "pattern":"Interaction Log"}
+{"label": "TECH_TERM", "pattern":"Interactive Voice Response"}
+{"label": "TECH_TERM", "pattern":"Internal Call"}
+{"label": "TECH_TERM", "pattern":"Interview"}
+{"label": "TECH_TERM", "pattern":"Invoice"}
+{"label": "TECH_TERM", "pattern":"ISO Code"}
+{"label": "TECH_TERM", "pattern":"IVR"}
+{"label": "TECH_TERM", "pattern":"Javascript"}
+{"label": "TECH_TERM", "pattern":"Job"}
+{"label": "TECH_TERM", "pattern":"Job Bulk API 2.0"}
+{"label": "TECH_TERM", "pattern":"JSON"}
+{"label": "TECH_TERM", "pattern":"Junction Object"}
+{"label": "TECH_TERM", "pattern":"Key Derivation Function"}
+{"label": "TECH_TERM", "pattern":"Key Pair"}
+{"label": "TECH_TERM", "pattern":"Key Tenant Secret Rotation"}
+{"label": "TECH_TERM", "pattern":"Knowledge"}
+{"label": "TECH_TERM", "pattern":"Knowledge Agent"}
+{"label": "TECH_TERM", "pattern":"Knowledge and Answers"}
+{"label": "TECH_TERM", "pattern":"Knowledge article"}
+{"label": "TECH_TERM", "pattern":"Knowledge base"}
+{"label": "TECH_TERM", "pattern":"Knowledge Sidebar"}
+{"label": "TECH_TERM", "pattern":"Layout"}
+{"label": "TECH_TERM", "pattern":"Lead"}
+{"label": "TECH_TERM", "pattern":"Lead Scoring"}
+{"label": "TECH_TERM", "pattern":"Leads"}
+{"label": "TECH_TERM", "pattern":"Length"}
+{"label": "TECH_TERM", "pattern":"Letterhead"}
+{"label": "TECH_TERM", "pattern":"Library"}
+{"label": "TECH_TERM", "pattern":"Library Permission"}
+{"label": "TECH_TERM", "pattern":"License Management Application"}
+{"label": "TECH_TERM", "pattern":"License Management Organization"}
+{"label": "TECH_TERM", "pattern":"Lightning for Gmail"}
+{"label": "TECH_TERM", "pattern":"Lightning for Outlook"}
+{"label": "TECH_TERM", "pattern":"Lightning Knowledge"}
+{"label": "TECH_TERM", "pattern":"Lightning Platform"}
+{"label": "TECH_TERM", "pattern":"Lightning Platform App Menu"}
+{"label": "TECH_TERM", "pattern":"Lightning Platform Builder"}
+{"label": "TECH_TERM", "pattern":"Lightning Platform Enterprise App"}
+{"label": "TECH_TERM", "pattern":"Lightning Platform Light App"}
+{"label": "TECH_TERM", "pattern":"Lightning Sync"}
+{"label": "TECH_TERM", "pattern":"Like"}
+{"label": "TECH_TERM", "pattern":"Like Chatter Answers"}
+{"label": "TECH_TERM", "pattern":"List Custom Settings"}
+{"label": "TECH_TERM", "pattern":"List Price"}
+{"label": "TECH_TERM", "pattern":"List view"}
+{"label": "TECH_TERM", "pattern":"Local Name"}
+{"label": "TECH_TERM", "pattern":"Local Project"}
+{"label": "TECH_TERM", "pattern":"Locale"}
+{"label": "TECH_TERM", "pattern":"Logged in User"}
+{"label": "TECH_TERM", "pattern":"Long Text Area"}
+{"label": "TECH_TERM", "pattern":"Lookup Dialog"}
+{"label": "TECH_TERM", "pattern":"Lookup Field"}
+{"label": "TECH_TERM", "pattern":"Lookup Filter"}
+{"label": "TECH_TERM", "pattern":"Lookup Icon"}
+{"label": "TECH_TERM", "pattern":"Lookup Relationship"}
+{"label": "TECH_TERM", "pattern":"Mail Merge"}
+{"label": "TECH_TERM", "pattern":"Major Release"}
+{"label": "TECH_TERM", "pattern":"Managed Package"}
+{"label": "TECH_TERM", "pattern":"Managed Package Extension"}
+{"label": "TECH_TERM", "pattern":"Manifest File"}
+{"label": "TECH_TERM", "pattern":"Manual Sharing"}
+{"label": "TECH_TERM", "pattern":"Many to Many Relationship"}
+{"label": "TECH_TERM", "pattern":"Marketing Cloud"}
+{"label": "TECH_TERM", "pattern":"Marketing User"}
+{"label": "TECH_TERM", "pattern":"Master Detail Relationship"}
+{"label": "TECH_TERM", "pattern":"Master HSM"}
+{"label": "TECH_TERM", "pattern":"Master Picklist"}
+{"label": "TECH_TERM", "pattern":"Master Secret"}
+{"label": "TECH_TERM", "pattern":"Master Wrapping Key"}
+{"label": "TECH_TERM", "pattern":"Match"}
+{"label": "TECH_TERM", "pattern":"Matrix Report"}
+{"label": "TECH_TERM", "pattern":"Meeting Request"}
+{"label": "TECH_TERM", "pattern":"Member Status"}
+{"label": "TECH_TERM", "pattern":"Merge Field"}
+{"label": "TECH_TERM", "pattern":"Message"}
+{"label": "TECH_TERM", "pattern":"Message Chatter"}
+{"label": "TECH_TERM", "pattern":"Metadata"}
+{"label": "TECH_TERM", "pattern":"Metadata Component"}
+{"label": "TECH_TERM", "pattern":"Metadata Driven Development"}
+{"label": "TECH_TERM", "pattern":"Metadata Type"}
+{"label": "TECH_TERM", "pattern":"Metadata WSDL"}
+{"label": "TECH_TERM", "pattern":"Metrics"}
+{"label": "TECH_TERM", "pattern":"Migration"}
+{"label": "TECH_TERM", "pattern":"Milestone"}
+{"label": "TECH_TERM", "pattern":"Milestone Actions"}
+{"label": "TECH_TERM", "pattern":"Mini Page Layout"}
+{"label": "TECH_TERM", "pattern":"Mini View"}
+{"label": "TECH_TERM", "pattern":"Mobile"}
+{"label": "TECH_TERM", "pattern":"Mobile Configuration"}
+{"label": "TECH_TERM", "pattern":"Multi Person Event"}
+{"label": "TECH_TERM", "pattern":"Multi Select"}
+{"label": "TECH_TERM", "pattern":"Multi Select Picklist"}
+{"label": "TECH_TERM", "pattern":"Multicurrency"}
+{"label": "TECH_TERM", "pattern":"Multitenancy"}
+{"label": "TECH_TERM", "pattern":"MVC"}
+{"label": "TECH_TERM", "pattern":"My Settings"}
+{"label": "TECH_TERM", "pattern":"Named Credential"}
+{"label": "TECH_TERM", "pattern":"Namespace"}
+{"label": "TECH_TERM", "pattern":"Namespace Prefix"}
+{"label": "TECH_TERM", "pattern":"Native App"}
+{"label": "TECH_TERM", "pattern":"Navigation"}
+{"label": "TECH_TERM", "pattern":"Navigation Tab"}
+{"label": "TECH_TERM", "pattern":"New Business Quote"}
+{"label": "TECH_TERM", "pattern":"Nickname"}
+{"label": "TECH_TERM", "pattern":"Note"}
+{"label": "TECH_TERM", "pattern":"Notes"}
+{"label": "TECH_TERM", "pattern":"Object"}
+{"label": "TECH_TERM", "pattern":"Object Level Help"}
+{"label": "TECH_TERM", "pattern":"Object Level Security"}
+{"label": "TECH_TERM", "pattern":"OData Producer"}
+{"label": "TECH_TERM", "pattern":"Omni Channel"}
+{"label": "TECH_TERM", "pattern":"On Demand Document"}
+{"label": "TECH_TERM", "pattern":"OnClick JavaScript"}
+{"label": "TECH_TERM", "pattern":"One to Many Relationship"}
+{"label": "TECH_TERM", "pattern":"Open CTI"}
+{"label": "TECH_TERM", "pattern":"Operator"}
+{"label": "TECH_TERM", "pattern":"Opportunities"}
+{"label": "TECH_TERM", "pattern":"Opportunity"}
+{"label": "TECH_TERM", "pattern":"Opportunity Stage"}
+{"label": "TECH_TERM", "pattern":"Opportunity Team"}
+{"label": "TECH_TERM", "pattern":"Order"}
+{"label": "TECH_TERM", "pattern":"Org"}
+{"label": "TECH_TERM", "pattern":"Organic Search Leads"}
+{"label": "TECH_TERM", "pattern":"Organization"}
+{"label": "TECH_TERM", "pattern":"Organization Wide Address"}
+{"label": "TECH_TERM", "pattern":"Organization Wide Defaults"}
+{"label": "TECH_TERM", "pattern":"Outbound Call"}
+{"label": "TECH_TERM", "pattern":"Outbound Message"}
+{"label": "TECH_TERM", "pattern":"Overlay"}
+{"label": "TECH_TERM", "pattern":"Owner"}
+{"label": "TECH_TERM", "pattern":"Owner Only Amount"}
+{"label": "TECH_TERM", "pattern":"Owner Only Quantity"}
+{"label": "TECH_TERM", "pattern":"PaaS"}
+{"label": "TECH_TERM", "pattern":"Package"}
+{"label": "TECH_TERM", "pattern":"Package Dependency"}
+{"label": "TECH_TERM", "pattern":"Package Installation"}
+{"label": "TECH_TERM", "pattern":"Package Publication"}
+{"label": "TECH_TERM", "pattern":"Package Version"}
+{"label": "TECH_TERM", "pattern":"Page Layout"}
+{"label": "TECH_TERM", "pattern":"Pardot"}
+{"label": "TECH_TERM", "pattern":"Parent Account"}
+{"label": "TECH_TERM", "pattern":"Parent Category"}
+{"label": "TECH_TERM", "pattern":"Partial Copy Sandbox"}
+{"label": "TECH_TERM", "pattern":"Partial Page"}
+{"label": "TECH_TERM", "pattern":"Partner"}
+{"label": "TECH_TERM", "pattern":"Partner Accounts"}
+{"label": "TECH_TERM", "pattern":"Partner community"}
+{"label": "TECH_TERM", "pattern":"Partner Portal"}
+{"label": "TECH_TERM", "pattern":"Partner Role"}
+{"label": "TECH_TERM", "pattern":"Partner User"}
+{"label": "TECH_TERM", "pattern":"Partner WSDL"}
+{"label": "TECH_TERM", "pattern":"Patch"}
+{"label": "TECH_TERM", "pattern":"Patch Development Organization"}
+{"label": "TECH_TERM", "pattern":"Patch Release"}
+{"label": "TECH_TERM", "pattern":"Payment"}
+{"label": "TECH_TERM", "pattern":"People"}
+{"label": "TECH_TERM", "pattern":"Percent"}
+{"label": "TECH_TERM", "pattern":"Performance Edition"}
+{"label": "TECH_TERM", "pattern":"Permission"}
+{"label": "TECH_TERM", "pattern":"Permission set"}
+{"label": "TECH_TERM", "pattern":"Permission Set License"}
+{"label": "TECH_TERM", "pattern":"Person Account"}
+{"label": "TECH_TERM", "pattern":"Personal Edition"}
+{"label": "TECH_TERM", "pattern":"Personal Information"}
+{"label": "TECH_TERM", "pattern":"Personal Settings"}
+{"label": "TECH_TERM", "pattern":"Phrase Search"}
+{"label": "TECH_TERM", "pattern":"Picklist"}
+{"label": "TECH_TERM", "pattern":"Picklist Values"}
+{"label": "TECH_TERM", "pattern":"Pinned Lists"}
+{"label": "TECH_TERM", "pattern":"Pipeline"}
+{"label": "TECH_TERM", "pattern":"Platform as a Service"}
+{"label": "TECH_TERM", "pattern":"Platform Edition"}
+{"label": "TECH_TERM", "pattern":"Point"}
+{"label": "TECH_TERM", "pattern":"Popular Ideas"}
+{"label": "TECH_TERM", "pattern":"Popular Questions"}
+{"label": "TECH_TERM", "pattern":"Post"}
+{"label": "TECH_TERM", "pattern":"Post Sharing"}
+{"label": "TECH_TERM", "pattern":"Postback Request"}
+{"label": "TECH_TERM", "pattern":"Price Book"}
+{"label": "TECH_TERM", "pattern":"Primary Contact"}
+{"label": "TECH_TERM", "pattern":"Primary Key"}
+{"label": "TECH_TERM", "pattern":"Primary Partner"}
+{"label": "TECH_TERM", "pattern":"Primary Tab"}
+{"label": "TECH_TERM", "pattern":"Printable View"}
+{"label": "TECH_TERM", "pattern":"Private"}
+{"label": "TECH_TERM", "pattern":"Private Branch Exchange"}
+{"label": "TECH_TERM", "pattern":"Private Sharing"}
+{"label": "TECH_TERM", "pattern":"Privately Shared"}
+{"label": "TECH_TERM", "pattern":"Probability"}
+{"label": "TECH_TERM", "pattern":"Process"}
+{"label": "TECH_TERM", "pattern":"Process Instance"}
+{"label": "TECH_TERM", "pattern":"Process Instance Node"}
+{"label": "TECH_TERM", "pattern":"Process Visualizer"}
+{"label": "TECH_TERM", "pattern":"Product"}
+{"label": "TECH_TERM", "pattern":"Product Family"}
+{"label": "TECH_TERM", "pattern":"Product Checkout"}
+{"label": "TECH_TERM", "pattern":"Production Organization"}
+{"label": "TECH_TERM", "pattern":"Professional Edition"}
+{"label": "TECH_TERM", "pattern":"Profile"}
+{"label": "TECH_TERM", "pattern":"Profile Chatter"}
+{"label": "TECH_TERM", "pattern":"Project"}
+{"label": "TECH_TERM", "pattern":"Project Manifest"}
+{"label": "TECH_TERM", "pattern":"Promote"}
+{"label": "TECH_TERM", "pattern":"Prototype"}
+{"label": "TECH_TERM", "pattern":"Prototype object"}
+{"label": "TECH_TERM", "pattern":"Provider Organization"}
+{"label": "TECH_TERM", "pattern":"Public Calendar"}
+{"label": "TECH_TERM", "pattern":"Public Group"}
+{"label": "TECH_TERM", "pattern":"Published Article"}
+{"label": "TECH_TERM", "pattern":"Published Translation"}
+{"label": "TECH_TERM", "pattern":"Publisher"}
+{"label": "TECH_TERM", "pattern":"Publishing Cycle"}
+{"label": "TECH_TERM", "pattern":"Purchase Rules"}
+{"label": "TECH_TERM", "pattern":"Push Notifications"}
+{"label": "TECH_TERM", "pattern":"Push Notifications Mobile"}
+{"label": "TECH_TERM", "pattern":"Push Notifications Salesforce Console"}
+{"label": "TECH_TERM", "pattern":"Push Upgrade"}
+{"label": "TECH_TERM", "pattern":"Quantity Forecasting"}
+{"label": "TECH_TERM", "pattern":"Quantity Schedule"}
+{"label": "TECH_TERM", "pattern":"Quantity Without Adjustments"}
+{"label": "TECH_TERM", "pattern":"Quantity Without Manager Adjustment"}
+{"label": "TECH_TERM", "pattern":"Quantity Without Owner Adjustment"}
+{"label": "TECH_TERM", "pattern":"Query Locator"}
+{"label": "TECH_TERM", "pattern":"Query String Parameter"}
+{"label": "TECH_TERM", "pattern":"Question"}
+{"label": "TECH_TERM", "pattern":"Question Private"}
+{"label": "TECH_TERM", "pattern":"Queue"}
+{"label": "TECH_TERM", "pattern":"Queue Salesforce CRM Call Center"}
+{"label": "TECH_TERM", "pattern":"Quick Text"}
+{"label": "TECH_TERM", "pattern":"Quota"}
+{"label": "TECH_TERM", "pattern":"Quote"}
+{"label": "TECH_TERM", "pattern":"Quote Line Item"}
+{"label": "TECH_TERM", "pattern":"Quote Checkout"}
+{"label": "TECH_TERM", "pattern":"Read Only"}
+{"label": "TECH_TERM", "pattern":"Recall Actions"}
+{"label": "TECH_TERM", "pattern":"Recent Activity"}
+{"label": "TECH_TERM", "pattern":"Recent Items"}
+{"label": "TECH_TERM", "pattern":"Record"}
+{"label": "TECH_TERM", "pattern":"Record Detail Page"}
+{"label": "TECH_TERM", "pattern":"Record ID"}
+{"label": "TECH_TERM", "pattern":"Record Level Security"}
+{"label": "TECH_TERM", "pattern":"Record Locking"}
+{"label": "TECH_TERM", "pattern":"Record Name"}
+{"label": "TECH_TERM", "pattern":"Record page"}
+{"label": "TECH_TERM", "pattern":"Record type"}
+{"label": "TECH_TERM", "pattern":"Record types"}
+{"label": "TECH_TERM", "pattern":"Record Update"}
+{"label": "TECH_TERM", "pattern":"Recurring Event"}
+{"label": "TECH_TERM", "pattern":"Recycle Bin"}
+{"label": "TECH_TERM", "pattern":"Regression Testing"}
+{"label": "TECH_TERM", "pattern":"Related Functions"}
+{"label": "TECH_TERM", "pattern":"Related list"}
+{"label": "TECH_TERM", "pattern":"Related List Hover Links"}
+{"label": "TECH_TERM", "pattern":"Related List Item"}
+{"label": "TECH_TERM", "pattern":"Related Object"}
+{"label": "TECH_TERM", "pattern":"Related Objects"}
+{"label": "TECH_TERM", "pattern":"Relationship"}
+{"label": "TECH_TERM", "pattern":"Relationship Group"}
+{"label": "TECH_TERM", "pattern":"Relationship Group Member"}
+{"label": "TECH_TERM", "pattern":"Relationship Query"}
+{"label": "TECH_TERM", "pattern":"Release Management"}
+{"label": "TECH_TERM", "pattern":"Release Train"}
+{"label": "TECH_TERM", "pattern":"Remote Access Application"}
+{"label": "TECH_TERM", "pattern":"Renewal"}
+{"label": "TECH_TERM", "pattern":"Reply"}
+{"label": "TECH_TERM", "pattern":"Report"}
+{"label": "TECH_TERM", "pattern":"Report Builder"}
+{"label": "TECH_TERM", "pattern":"Report Type"}
+{"label": "TECH_TERM", "pattern":"Reporting Snapshot"}
+{"label": "TECH_TERM", "pattern":"Reporting Snapshot Running User"}
+{"label": "TECH_TERM", "pattern":"Reporting Snapshot Source Report"}
+{"label": "TECH_TERM", "pattern":"Reporting Snapshot Target Object"}
+{"label": "TECH_TERM", "pattern":"Requested Meeting"}
+{"label": "TECH_TERM", "pattern":"Resolution time"}
+{"label": "TECH_TERM", "pattern":"Resource Calendar"}
+{"label": "TECH_TERM", "pattern":"REST API"}
+{"label": "TECH_TERM", "pattern":"Return On Investment"}
+{"label": "TECH_TERM", "pattern":"Revenue Forecasting"}
+{"label": "TECH_TERM", "pattern":"Revenue Schedule"}
+{"label": "TECH_TERM", "pattern":"Role"}
+{"label": "TECH_TERM", "pattern":"Role Hierarchy"}
+{"label": "TECH_TERM", "pattern":"Roles"}
+{"label": "TECH_TERM", "pattern":"Roll Up Summary Field"}
+{"label": "TECH_TERM", "pattern":"Routing Point"}
+{"label": "TECH_TERM", "pattern":"Running User"}
+{"label": "TECH_TERM", "pattern":"S Control"}
+{"label": "TECH_TERM", "pattern":"SaaS"}
+{"label": "TECH_TERM", "pattern":"Sales Cloud"}
+{"label": "TECH_TERM", "pattern":"Sales Price"}
+{"label": "TECH_TERM", "pattern":"Sales process"}
+{"label": "TECH_TERM", "pattern":"Salesforce"}
+{"label": "TECH_TERM", "pattern":"Salesforce API Version"}
+{"label": "TECH_TERM", "pattern":"Salesforce Certificate and Key Pair"}
+{"label": "TECH_TERM", "pattern":"Salesforce Connect"}
+{"label": "TECH_TERM", "pattern":"Salesforce Console"}
+{"label": "TECH_TERM", "pattern":"Salesforce Console Integration Toolkit"}
+{"label": "TECH_TERM", "pattern":"Salesforce CRM Call Center"}
+{"label": "TECH_TERM", "pattern":"Salesforce CRM Content"}
+{"label": "TECH_TERM", "pattern":"Salesforce Developers"}
+{"label": "TECH_TERM", "pattern":"Salesforce Extensions for Visual Studio Code"}
+{"label": "TECH_TERM", "pattern":"Salesforce for Outlook Configuration"}
+{"label": "TECH_TERM", "pattern":"Salesforce Lightning"}
+{"label": "TECH_TERM", "pattern":"Salesforce Office Toolkit"}
+{"label": "TECH_TERM", "pattern":"Salesforce Pardot"}
+{"label": "TECH_TERM", "pattern":"Salesforce Record ID"}
+{"label": "TECH_TERM", "pattern":"Salesforce SOA"}
+{"label": "TECH_TERM", "pattern":"Salesforce for Outlook"}
+{"label": "TECH_TERM", "pattern":"Sandbox"}
+{"label": "TECH_TERM", "pattern":"Sandbox Templates"}
+{"label": "TECH_TERM", "pattern":"Save & New"}
+{"label": "TECH_TERM", "pattern":"Save As"}
+{"label": "TECH_TERM", "pattern":"Schedule"}
+{"label": "TECH_TERM", "pattern":"Screen Pop"}
+{"label": "TECH_TERM", "pattern":"Search"}
+{"label": "TECH_TERM", "pattern":"Search Layout"}
+{"label": "TECH_TERM", "pattern":"Search Phrase"}
+{"label": "TECH_TERM", "pattern":"Select"}
+{"label": "TECH_TERM", "pattern":"Self Service"}
+{"label": "TECH_TERM", "pattern":"Semi Join"}
+{"label": "TECH_TERM", "pattern":"Service"}
+{"label": "TECH_TERM", "pattern":"Service Cloud"}
+{"label": "TECH_TERM", "pattern":"Service Cloud Portal"}
+{"label": "TECH_TERM", "pattern":"Service Contract"}
+{"label": "TECH_TERM", "pattern":"Service Oriented Architecture"}
+{"label": "TECH_TERM", "pattern":"Session ID"}
+{"label": "TECH_TERM", "pattern":"Session Timeout"}
+{"label": "TECH_TERM", "pattern":"Setter Methods"}
+{"label": "TECH_TERM", "pattern":"Settings"}
+{"label": "TECH_TERM", "pattern":"Setup"}
+{"label": "TECH_TERM", "pattern":"Share Group"}
+{"label": "TECH_TERM", "pattern":"Shared Activities"}
+{"label": "TECH_TERM", "pattern":"Sharing"}
+{"label": "TECH_TERM", "pattern":"Sharing Group"}
+{"label": "TECH_TERM", "pattern":"Sharing Model"}
+{"label": "TECH_TERM", "pattern":"Sharing Rule"}
+{"label": "TECH_TERM", "pattern":"Sharing Chatter"}
+{"label": "TECH_TERM", "pattern":"Show Details"}
+{"label": "TECH_TERM", "pattern":"Hide Details"}
+{"label": "TECH_TERM", "pattern":"Sidebar"}
+{"label": "TECH_TERM", "pattern":"Sites"}
+{"label": "TECH_TERM", "pattern":"Skeleton Template"}
+{"label": "TECH_TERM", "pattern":"Snippet"}
+{"label": "TECH_TERM", "pattern":"SOAP API"}
+{"label": "TECH_TERM", "pattern":"SObject"}
+{"label": "TECH_TERM", "pattern":"Social Accounts and Contacts"}
+{"label": "TECH_TERM", "pattern":"Social Handle"}
+{"label": "TECH_TERM", "pattern":"Social Key"}
+{"label": "TECH_TERM", "pattern":"Social Profile or Social Network Profile"}
+{"label": "TECH_TERM", "pattern":"Softphone"}
+{"label": "TECH_TERM", "pattern":"Softphone Connector"}
+{"label": "TECH_TERM", "pattern":"Softphone CTI Adapter"}
+{"label": "TECH_TERM", "pattern":"Software as a Service"}
+{"label": "TECH_TERM", "pattern":"Solution"}
+{"label": "TECH_TERM", "pattern":"Solution Manager"}
+{"label": "TECH_TERM", "pattern":"Solutions"}
+{"label": "TECH_TERM", "pattern":"SOQL"}
+{"label": "TECH_TERM", "pattern":"SOSL"}
+{"label": "TECH_TERM", "pattern":"Source Report"}
+{"label": "TECH_TERM", "pattern":"Special Terms"}
+{"label": "TECH_TERM", "pattern":"Stage Duration"}
+{"label": "TECH_TERM", "pattern":"Stage History"}
+{"label": "TECH_TERM", "pattern":"Standard Object"}
+{"label": "TECH_TERM", "pattern":"Standard or custom fields"}
+{"label": "TECH_TERM", "pattern":"Standard or custom objects"}
+{"label": "TECH_TERM", "pattern":"Standard Price"}
+{"label": "TECH_TERM", "pattern":"Standard Price Book"}
+{"label": "TECH_TERM", "pattern":"Statement"}
+{"label": "TECH_TERM", "pattern":"Static resource"}
+{"label": "TECH_TERM", "pattern":"Status"}
+{"label": "TECH_TERM", "pattern":"Stemming"}
+{"label": "TECH_TERM", "pattern":"Subflow"}
+{"label": "TECH_TERM", "pattern":"Subscriber"}
+{"label": "TECH_TERM", "pattern":"Subscriber Organization"}
+{"label": "TECH_TERM", "pattern":"Summary Field"}
+{"label": "TECH_TERM", "pattern":"Summary Report"}
+{"label": "TECH_TERM", "pattern":"Sync"}
+{"label": "TECH_TERM", "pattern":"Syndication Feeds"}
+{"label": "TECH_TERM", "pattern":"System Administrator"}
+{"label": "TECH_TERM", "pattern":"System Log"}
+{"label": "TECH_TERM", "pattern":"System Testing"}
+{"label": "TECH_TERM", "pattern":"Tab"}
+{"label": "TECH_TERM", "pattern":"Tabular Report"}
+{"label": "TECH_TERM", "pattern":"Tag"}
+{"label": "TECH_TERM", "pattern":"Tag Cloud"}
+{"label": "TECH_TERM", "pattern":"Task"}
+{"label": "TECH_TERM", "pattern":"Task Bar Links"}
+{"label": "TECH_TERM", "pattern":"Template"}
+{"label": "TECH_TERM", "pattern":"Tenant Secret"}
+{"label": "TECH_TERM", "pattern":"Territory"}
+{"label": "TECH_TERM", "pattern":"Test Case Coverage"}
+{"label": "TECH_TERM", "pattern":"Test Drive"}
+{"label": "TECH_TERM", "pattern":"Test Method"}
+{"label": "TECH_TERM", "pattern":"Test Organization"}
+{"label": "TECH_TERM", "pattern":"Text"}
+{"label": "TECH_TERM", "pattern":"Text Area"}
+{"label": "TECH_TERM", "pattern":"The App Setup area of the Salesforce setup menu."}
+{"label": "TECH_TERM", "pattern":"Time Dependent Workflow Action"}
+{"label": "TECH_TERM", "pattern":"Time Trigger"}
+{"label": "TECH_TERM", "pattern":"Timeout"}
+{"label": "TECH_TERM", "pattern":"Top All Time Ideas"}
+{"label": "TECH_TERM", "pattern":"Topics"}
+{"label": "TECH_TERM", "pattern":"Topics Chatter Answers"}
+{"label": "TECH_TERM", "pattern":"Transaction"}
+{"label": "TECH_TERM", "pattern":"Transaction Apex"}
+{"label": "TECH_TERM", "pattern":"Transaction Checkout"}
+{"label": "TECH_TERM", "pattern":"Translation Workbench"}
+{"label": "TECH_TERM", "pattern":"Trending Topics"}
+{"label": "TECH_TERM", "pattern":"Trial Edition"}
+{"label": "TECH_TERM", "pattern":"Trigger"}
+{"label": "TECH_TERM", "pattern":"Trigger Context Variable"}
+{"label": "TECH_TERM", "pattern":"Truncate"}
+{"label": "TECH_TERM", "pattern":"Type"}
+{"label": "TECH_TERM", "pattern":"UAT"}
+{"label": "TECH_TERM", "pattern":"Unfollow"}
+{"label": "TECH_TERM", "pattern":"Unique Name Used by API"}
+{"label": "TECH_TERM", "pattern":"Unit Test"}
+{"label": "TECH_TERM", "pattern":"Unlimited Edition"}
+{"label": "TECH_TERM", "pattern":"Unmanaged Package"}
+{"label": "TECH_TERM", "pattern":"Update"}
+{"label": "TECH_TERM", "pattern":"Updating"}
+{"label": "TECH_TERM", "pattern":"Upgrade"}
+{"label": "TECH_TERM", "pattern":"Upgrade Checkout"}
+{"label": "TECH_TERM", "pattern":"Upgrading"}
+{"label": "TECH_TERM", "pattern":"Uploading"}
+{"label": "TECH_TERM", "pattern":"URL"}
+{"label": "TECH_TERM", "pattern":"URL S Control"}
+{"label": "TECH_TERM", "pattern":"Usage based Entitlement"}
+{"label": "TECH_TERM", "pattern":"User"}
+{"label": "TECH_TERM", "pattern":"User Acceptance Testing"}
+{"label": "TECH_TERM", "pattern":"User Interface"}
+{"label": "TECH_TERM", "pattern":"User License"}
+{"label": "TECH_TERM", "pattern":"User Permission"}
+{"label": "TECH_TERM", "pattern":"User Provisioning for Connected Apps"}
+{"label": "TECH_TERM", "pattern":"Validation Rule"}
+{"label": "TECH_TERM", "pattern":"Version"}
+{"label": "TECH_TERM", "pattern":"View"}
+{"label": "TECH_TERM", "pattern":"View State"}
+{"label": "TECH_TERM", "pattern":"Visualforce"}
+{"label": "TECH_TERM", "pattern":"Visualforce Controller"}
+{"label": "TECH_TERM", "pattern":"Visualforce Lifecycle"}
+{"label": "TECH_TERM", "pattern":"Visualforce Page"}
+{"label": "TECH_TERM", "pattern":"Visualforce pages"}
+{"label": "TECH_TERM", "pattern":"Voice Response Unit"}
+{"label": "TECH_TERM", "pattern":"Vote"}
+{"label": "TECH_TERM", "pattern":"Vote Idea"}
+{"label": "TECH_TERM", "pattern":"Vote Reply"}
+{"label": "TECH_TERM", "pattern":"Web Control"}
+{"label": "TECH_TERM", "pattern":"Web Direct Leads"}
+{"label": "TECH_TERM", "pattern":"Web Links"}
+{"label": "TECH_TERM", "pattern":"Web Referral Leads"}
+{"label": "TECH_TERM", "pattern":"Web Service"}
+{"label": "TECH_TERM", "pattern":"Web Service Connector"}
+{"label": "TECH_TERM", "pattern":"Web Services API"}
+{"label": "TECH_TERM", "pattern":"Web Services Description Language"}
+{"label": "TECH_TERM", "pattern":"Web Tab"}
+{"label": "TECH_TERM", "pattern":"Web to Case"}
+{"label": "TECH_TERM", "pattern":"Web to Lead"}
+{"label": "TECH_TERM", "pattern":"WebService Method"}
+{"label": "TECH_TERM", "pattern":"Wildcard"}
+{"label": "TECH_TERM", "pattern":"Wizard"}
+{"label": "TECH_TERM", "pattern":"Workflow"}
+{"label": "TECH_TERM", "pattern":"Workflow Action"}
+{"label": "TECH_TERM", "pattern":"Workflow Email Alert"}
+{"label": "TECH_TERM", "pattern":"Workflow Field Update"}
+{"label": "TECH_TERM", "pattern":"Workflow Outbound Message"}
+{"label": "TECH_TERM", "pattern":"Workflow Queue"}
+{"label": "TECH_TERM", "pattern":"Workflow Rule"}
+{"label": "TECH_TERM", "pattern":"Workflow Task"}
+{"label": "TECH_TERM", "pattern":"Wrapper Class"}
+{"label": "TECH_TERM", "pattern":"WSC"}
+{"label": "TECH_TERM", "pattern":"WSDL"}
+{"label": "TECH_TERM", "pattern":"XML"}
+{"label": "TECH_TERM", "pattern":"Your Company"}
+{"label": "TECH_TERM", "pattern":"Zip File"}
+{"label": "TECH_TERM", "pattern":"Zone"}

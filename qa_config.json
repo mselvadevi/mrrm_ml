@@ -1,0 +1,20 @@
+{
+	"service_date": [
+		"Date of Service",
+		"Service",
+		"Visit Date",
+		"SVC date",
+		"Encounter Date"
+	],
+	"patient_name": [
+		"patient name",
+		"patientname",
+		"patient"
+	],
+	"hospital": [
+		"hospital",
+		"facility",
+		"medical center",
+		"medicalcenter"
+	]
+}

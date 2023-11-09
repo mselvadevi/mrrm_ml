@@ -1,0 +1,102 @@
+version: "3.3"
+services:
+  mlflow:
+    container_name: mlflow_cont_v_1
+    image: mlflow:latest
+    build:
+      context: ./ML_FLOW
+      dockerfile: Dockerfile    
+    ports:
+      - "5000:5000"
+    volumes:
+      - "/ML_FLOW:/mlflow"
+    environment:
+       BACKEND_URI: sqlite:////mlflow/kpodb.sqlite
+       ARTIFACT_ROOT: /mlflow/artifacts
+    restart: always
+      
+  training:
+    container_name: training_cont_v_1
+    image: sun379/kpo:training_image_v_1
+    build:
+      context: ./TRAIN
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - /var/log/KPO/:/LOGS
+      - /MODELS/KPO/:/MODELS/KPO
+      - /MODELS/KPO/TRG_SOURCE_DIR/:/KPO/SOURCE
+      - /MODELS/KPO/TRAINED_MODELS_DIR/:/KPO/MODELS/
+      - /MODELS/KPO/RE_TRAIN/:/MODELS/KPO/RE_TRAIN
+      - /MODELS/KPO/RE_TEST/:/MODELS/KPO/RE_TEST
+    ports:
+      - 6002:6002
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: 'nvidia'
+              count: 1
+              capabilities: ['gpu']     
+    # command: python3 -u model_server.py $LISTEN_HOST $LISTEN_PORT
+    command: python3  -u train_docker.py "/KPO/SOURCE"  "/KPO/MODELS"  "xyz" 512  "bert-base-uncased" 10  2 20 "ImageText"  'category' "Duplicates,Trash" "PAGE_CATEGORY" ".json" 
+
+
+    
+  kposerver:
+    container_name: kposerver_cont_v_1
+    image: sun379/kpo:kposerver_image_v_1
+    build:
+      context: ./MODELS
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - /var/log/KPO/:/LOGS
+      - /MODELS/KPO/:/MODELS/KPO
+    ports:
+      - 6000:6000
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: 'nvidia'
+              count: 1
+              capabilities: ['gpu']     
+    command: python3 -u model_server.py $LISTEN_HOST $LISTEN_PORT
+
+  kpoclient:
+    container_name: kpo_client_cont_v_1
+    image: sun379/kpo:kpo_client_v_1
+    build:
+      context: ./WEB_CLIENT
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - /var/log/KPO/:/LOGS
+      - /MODELS/KPO/:/MODELS/KPO
+      - /var/log/gunicorn/:/var/log/gunicorn
+    environment:
+      - SEND_HOST=kposerver
+      - SEND_PORT=6000   
+      - PYTHONUNBUFFERED=1   
+    ports:
+      - 6001:6001
+    links:
+      - "kposerver: kposerver"
+    command: gunicorn -w 10 -b 0.0.0.0:6001 wsgi:server --timeout 60000 --log-level debug $SEND_HOST $SEND_PORT  --error-logfile /var/log/gunicorn/error.log --access-logfile /var/log/gunicorn/access.log --capture-output
+    
+  nginxx:
+    container_name: nginx_container_v_1
+    image: sun379/kpo:nginx_image_v_1
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      network: host
+    restart: always
+    ports:
+      - 443:443
+    volumes:
+      - /var/log/nginx:/var/log/nginx
+      - /etc/nginx/ssl:/etc/nginx/ssl/
+      - /etc/nginx/conf.d:/etc/nginx/conf.d/
+  

@@ -1,0 +1,31 @@
+---
+version: "3.3"
+services:
+  kposerver:
+    container_name: kposerver_cont_v_1
+    image: sun379/kpo:kposerver_image_v_1
+    build:
+      context: ./MODELS
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - /var/log/KPO/:/LOGS
+      - /var/log/KPO/MODELS/FINAL:/MODELS/FINAL
+    ports:
+      - 6000:6000
+    command: gunicorn -w 4 -b 0.0.0.0:6000 wsgi:server --timeout 300 --log-level debug 
+  
+  nginxx:
+    container_name: nginx_container_v_1
+    image: sun379/kpo:nginx_image_v_1
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      network: host
+    restart: always
+    ports:
+      - 443:443
+    volumes:
+      - ./logs:/var/log/nginx
+      - /etc/nginx/ssl:/etc/nginx/ssl/
+  

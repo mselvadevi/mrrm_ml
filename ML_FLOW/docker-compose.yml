@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mlflow:
+    image: mlflow:latest
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - "/ML_FLOW:/mlflow"
+    environment:
+      BACKEND_URI: sqlite:////mlflow/kpodb.sqlite
+      ARTIFACT_ROOT: /mlflow/artifacts

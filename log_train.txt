@@ -1,0 +1,1468 @@
+cuda
+file_dir: /content/drive/MyDrive/KPO/Classfication/DATA-SETS/
+File lists: ['21-123-1925_cleaned.json', '21-123-1922_cleaned.json', '21-123-1932_cleaned.json', '21-123-1929_cleaned.json', '21-123-1928_cleaned.json', '21-123-1931_cleaned.json', '21-123-1933_cleaned.json', '21-123-1934_cleaned.json', '21-123-1935_cleaned.json', '21-123-1936_cleaned.json', '21-123-1938_cleaned.json', '21-123-1940_cleaned.json', '21-123-1942_cleaned.json', '21-123-1911_cleaned.json', '21-123-1913_cleaned.json', '21-123-1944_cleaned.json']
+Processing: 21-123-1925_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1925_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Medical' 'Duplicates' 'First Report of Injury/Incident' 'Other Persons']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Medical' 'First Report of Injury/Incident' 'Other Persons']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [1 2 3]
+size: 210
+Downloading (…)solve/main/vocab.txt: 100%
+232k/232k [00:00<00:00, 2.86MB/s]
+Downloading (…)okenizer_config.json: 100%
+28.0/28.0 [00:00<00:00, 1.48kB/s]
+Downloading (…)lve/main/config.json: 100%
+570/570 [00:00<00:00, 36.1kB/s]
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512.model', '_valid_logs.json', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: False
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: []
+Loading Pretrained models from HuggingFace
+Downloading pytorch_model.bin: 100%
+440M/440M [00:03<00:00, 121MB/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 36/36 [00:20<00:00,  1.75it/s]
+  0%|          | 0/10 [00:25<?, ?it/s]Training loss: 2.0533220999770694
+ 10%|█         | 1/10 [00:26<03:57, 26.42s/it]Validation loss: 1.2577517458370753
+F1 Score (Weighted): 0.6853070175438596
+Epoch : 2
+Epoch 2: 100%|██████████| 36/36 [00:17<00:00,  2.06it/s]
+ 10%|█         | 1/10 [00:43<03:57, 26.42s/it]Training loss: 0.9672314367360539
+ 20%|██        | 2/10 [00:44<02:54, 21.77s/it]Validation loss: 0.6942203385489327
+F1 Score (Weighted): 0.6853070175438596
+Epoch : 3
+Epoch 3: 100%|██████████| 36/36 [00:18<00:00,  1.98it/s]
+ 20%|██        | 2/10 [01:03<02:54, 21.77s/it]Training loss: 0.5957945154772865
+ 30%|███       | 3/10 [01:04<02:24, 20.63s/it]Validation loss: 0.5227954579251153
+F1 Score (Weighted): 0.8870283018867926
+Epoch : 4
+Epoch 4: 100%|██████████| 36/36 [00:18<00:00,  1.94it/s]
+ 30%|███       | 3/10 [01:22<02:24, 20.63s/it]Training loss: 0.38453047205176616
+ 40%|████      | 4/10 [01:23<02:01, 20.24s/it]Validation loss: 0.42125272325107027
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 5
+Epoch 5: 100%|██████████| 36/36 [00:19<00:00,  1.88it/s]
+ 40%|████      | 4/10 [01:43<02:01, 20.24s/it]Training loss: 0.26529162459903294
+ 50%|█████     | 5/10 [01:44<01:41, 20.27s/it]Validation loss: 0.3833401618259294
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 6
+Epoch 6: 100%|██████████| 36/36 [00:19<00:00,  1.86it/s]
+ 50%|█████     | 5/10 [02:03<01:41, 20.27s/it]Training loss: 0.1750774345257216
+ 60%|██████    | 6/10 [02:04<01:21, 20.35s/it]Validation loss: 0.3737752363085747
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 7
+Epoch 7: 100%|██████████| 36/36 [00:18<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [02:23<01:21, 20.35s/it]Training loss: 0.12595628833191264
+ 70%|███████   | 7/10 [02:24<01:00, 20.24s/it]Validation loss: 0.37424624232309206
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 8
+Epoch 8: 100%|██████████| 36/36 [00:18<00:00,  1.91it/s]
+ 70%|███████   | 7/10 [02:43<01:00, 20.24s/it]Training loss: 0.09171838789350456
+ 80%|████████  | 8/10 [02:44<00:40, 20.13s/it]Validation loss: 0.3752895673470838
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 9
+Epoch 9: 100%|██████████| 36/36 [00:18<00:00,  1.89it/s]
+ 80%|████████  | 8/10 [03:03<00:40, 20.13s/it]Training loss: 0.07779330760240555
+ 90%|█████████ | 9/10 [03:04<00:20, 20.12s/it]Validation loss: 0.3767591770738363
+F1 Score (Weighted): 0.9216564685314684
+Epoch : 10
+Epoch 10: 100%|██████████| 36/36 [00:19<00:00,  1.89it/s]
+ 90%|█████████ | 9/10 [03:23<00:20, 20.12s/it]Training loss: 0.07519088732078671
+100%|██████████| 10/10 [03:24<00:00, 20.49s/it]
+Validation loss: 0.37873456680348944
+F1 Score (Weighted): 0.9216564685314684
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512.model
+Model saved successfully
+Class: Medical
+Accuracy: 5/6
+
+Processing: 21-123-1922_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1922_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates'
+ 'First Report of Injury/Incident']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical' 'First Report of Injury/Incident']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1 2]
+size: 202
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512.model', '_valid_logs.json', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 35/35 [00:18<00:00,  1.91it/s]
+  0%|          | 0/10 [00:18<?, ?it/s]Training loss: 1.6105950457709177
+ 10%|█         | 1/10 [00:19<02:55, 19.50s/it]Validation loss: 0.9038546681404114
+F1 Score (Weighted): 0.9032258064516129
+Epoch : 2
+Epoch 2: 100%|██████████| 35/35 [00:18<00:00,  1.89it/s]
+ 10%|█         | 1/10 [00:38<02:55, 19.50s/it]Training loss: 0.6511263455663409
+ 20%|██        | 2/10 [00:39<02:36, 19.56s/it]Validation loss: 0.3650133865220206
+F1 Score (Weighted): 0.9676053934118449
+Epoch : 3
+Epoch 3: 100%|██████████| 35/35 [00:18<00:00,  1.92it/s]
+ 20%|██        | 2/10 [00:57<02:36, 19.56s/it]Training loss: 0.3275597346680505
+ 30%|███       | 3/10 [00:58<02:16, 19.43s/it]Validation loss: 0.16164286541087286
+F1 Score (Weighted): 1.0
+Epoch : 4
+Epoch 4: 100%|██████████| 35/35 [00:18<00:00,  1.93it/s]
+ 30%|███       | 3/10 [01:16<02:16, 19.43s/it]Training loss: 0.20831941440701485
+ 40%|████      | 4/10 [01:17<01:56, 19.34s/it]Validation loss: 0.08148331407989774
+F1 Score (Weighted): 1.0
+Epoch : 5
+Epoch 5: 100%|██████████| 35/35 [00:18<00:00,  1.92it/s]
+ 40%|████      | 4/10 [01:35<01:56, 19.34s/it]Training loss: 0.1665670841932297
+ 50%|█████     | 5/10 [01:36<01:36, 19.32s/it]Validation loss: 0.06691828343485083
+F1 Score (Weighted): 0.9676053934118449
+Epoch : 6
+Epoch 6: 100%|██████████| 35/35 [00:18<00:00,  1.92it/s]
+ 50%|█████     | 5/10 [01:55<01:36, 19.32s/it]Training loss: 0.15036529691091605
+ 60%|██████    | 6/10 [01:56<01:17, 19.33s/it]Validation loss: 0.041979753013168065
+F1 Score (Weighted): 1.0
+Epoch : 7
+Epoch 7: 100%|██████████| 35/35 [00:18<00:00,  1.92it/s]
+ 60%|██████    | 6/10 [02:14<01:17, 19.33s/it]Training loss: 0.13263873372759138
+ 70%|███████   | 7/10 [02:15<00:57, 19.32s/it]Validation loss: 0.0258047470290746
+F1 Score (Weighted): 1.0
+Epoch : 8
+Epoch 8: 100%|██████████| 35/35 [00:18<00:00,  1.93it/s]
+ 70%|███████   | 7/10 [02:33<00:57, 19.32s/it]Training loss: 0.1294316446940814
+ 80%|████████  | 8/10 [02:34<00:38, 19.30s/it]Validation loss: 0.03240261705858367
+F1 Score (Weighted): 1.0
+Epoch : 9
+Epoch 9: 100%|██████████| 35/35 [00:18<00:00,  1.93it/s]
+ 80%|████████  | 8/10 [02:52<00:38, 19.30s/it]Training loss: 0.1242007367046816
+ 90%|█████████ | 9/10 [02:53<00:19, 19.27s/it]Validation loss: 0.03179728319602353
+F1 Score (Weighted): 1.0
+Epoch : 10
+Epoch 10: 100%|██████████| 35/35 [00:18<00:00,  1.93it/s]
+ 90%|█████████ | 9/10 [03:12<00:19, 19.27s/it]Training loss: 0.12417168963168349
+100%|██████████| 10/10 [03:13<00:00, 19.32s/it]
+Validation loss: 0.03167366116706814
+F1 Score (Weighted): 1.0
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 17/17
+
+Processing: 21-123-1932_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1932_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 182
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512.model', '_valid_logs.json', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 31/31 [00:16<00:00,  1.90it/s]
+  0%|          | 0/10 [00:16<?, ?it/s]Training loss: 0.5296928462602438
+ 10%|█         | 1/10 [00:17<02:36, 17.41s/it]Validation loss: 0.08768769198407729
+F1 Score (Weighted): 0.9650406504065041
+Epoch : 2
+Epoch 2: 100%|██████████| 31/31 [00:16<00:00,  1.84it/s]
+ 10%|█         | 1/10 [00:34<02:36, 17.41s/it]Training loss: 0.3150385221646678
+ 20%|██        | 2/10 [00:35<02:21, 17.66s/it]Validation loss: 0.039036480554689966
+F1 Score (Weighted): 0.9650406504065041
+Epoch : 3
+Epoch 3: 100%|██████████| 31/31 [00:16<00:00,  1.88it/s]
+ 20%|██        | 2/10 [00:51<02:21, 17.66s/it]Training loss: 0.3032428995976525
+ 30%|███       | 3/10 [00:52<02:02, 17.56s/it]Validation loss: 0.015755936969071627
+F1 Score (Weighted): 1.0
+Epoch : 4
+Epoch 4: 100%|██████████| 31/31 [00:16<00:00,  1.93it/s]
+ 30%|███       | 3/10 [01:08<02:02, 17.56s/it]Training loss: 0.222455348083449
+ 40%|████      | 4/10 [01:09<01:44, 17.35s/it]Validation loss: 0.02556901308707893
+F1 Score (Weighted): 1.0
+Epoch : 5
+Epoch 5: 100%|██████████| 31/31 [00:16<00:00,  1.93it/s]
+ 40%|████      | 4/10 [01:25<01:44, 17.35s/it]Training loss: 0.23096524746788125
+ 50%|█████     | 5/10 [01:26<01:26, 17.23s/it]Validation loss: 0.04983352198420713
+F1 Score (Weighted): 0.9633273703041144
+Epoch : 6
+Epoch 6: 100%|██████████| 31/31 [00:16<00:00,  1.90it/s]
+ 50%|█████     | 5/10 [01:43<01:26, 17.23s/it]Training loss: 0.20673907425014243
+ 60%|██████    | 6/10 [01:44<01:09, 17.25s/it]Validation loss: 0.07517161080613732
+F1 Score (Weighted): 0.9633273703041144
+Epoch : 7
+Epoch 7: 100%|██████████| 31/31 [00:16<00:00,  1.89it/s]
+ 60%|██████    | 6/10 [02:00<01:09, 17.25s/it]Training loss: 0.2120846093016406
+ 70%|███████   | 7/10 [02:01<00:51, 17.28s/it]Validation loss: 0.124013055775625
+F1 Score (Weighted): 0.9633273703041144
+Epoch : 8
+Epoch 8: 100%|██████████| 31/31 [00:16<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [02:17<00:51, 17.28s/it]Training loss: 0.194590590158177
+ 80%|████████  | 8/10 [02:18<00:34, 17.28s/it]Validation loss: 0.11763073216813306
+F1 Score (Weighted): 0.9633273703041144
+Epoch : 9
+Epoch 9: 100%|██████████| 31/31 [00:16<00:00,  1.91it/s]
+ 80%|████████  | 8/10 [02:34<00:34, 17.28s/it]Training loss: 0.20571573526268044
+ 90%|█████████ | 9/10 [02:35<00:17, 17.26s/it]Validation loss: 0.14304054489669701
+F1 Score (Weighted): 0.9633273703041144
+Epoch : 10
+Epoch 10: 100%|██████████| 31/31 [00:16<00:00,  1.92it/s]
+ 90%|█████████ | 9/10 [02:52<00:17, 17.26s/it]Training loss: 0.18664963973025162
+100%|██████████| 10/10 [02:52<00:00, 17.30s/it]
+Validation loss: 0.12118071364238858
+F1 Score (Weighted): 0.9633273703041144
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 6/7
+
+Processing: 21-123-1929_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1929_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['First Report of Injury/Incident' 'Medical' 'Non-Medical/Others'
+ 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['First Report of Injury/Incident' 'Medical' 'Non-Medical/Others']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [2 1 0]
+size: 288
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_2_BERT_BOUNDRY_PRE_TRAIN_512.model', '_valid_logs.json', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 49/49 [00:25<00:00,  1.93it/s]
+  0%|          | 0/10 [00:25<?, ?it/s]Training loss: 0.35208529979940884
+ 10%|█         | 1/10 [00:27<04:03, 27.03s/it]Validation loss: 0.15323169353521532
+F1 Score (Weighted): 0.9736185383244206
+Epoch : 2
+Epoch 2: 100%|██████████| 49/49 [00:25<00:00,  1.94it/s]
+ 10%|█         | 1/10 [00:52<04:03, 27.03s/it]Training loss: 0.2921471387356976
+ 20%|██        | 2/10 [00:53<03:35, 26.89s/it]Validation loss: 0.09964860080637866
+F1 Score (Weighted): 0.9736185383244206
+Epoch : 3
+Epoch 3: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 20%|██        | 2/10 [01:18<03:35, 26.89s/it]Training loss: 0.26918653392099906
+ 30%|███       | 3/10 [01:20<03:07, 26.75s/it]Validation loss: 0.14128962371291387
+F1 Score (Weighted): 0.9736185383244206
+Epoch : 4
+Epoch 4: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 30%|███       | 3/10 [01:45<03:07, 26.75s/it]Training loss: 0.2671053586955353
+ 40%|████      | 4/10 [01:47<02:40, 26.71s/it]Validation loss: 0.01954763509436614
+F1 Score (Weighted): 1.0
+Epoch : 5
+Epoch 5: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 40%|████      | 4/10 [02:12<02:40, 26.71s/it]Training loss: 0.25384033279379414
+ 50%|█████     | 5/10 [02:13<02:13, 26.70s/it]Validation loss: 0.005662130036701758
+F1 Score (Weighted): 1.0
+Epoch : 6
+Epoch 6: 100%|██████████| 49/49 [00:25<00:00,  1.94it/s]
+ 50%|█████     | 5/10 [02:38<02:13, 26.70s/it]Training loss: 0.22798306791453946
+ 60%|██████    | 6/10 [02:40<01:46, 26.70s/it]Validation loss: 0.007066089711669419
+F1 Score (Weighted): 1.0
+Epoch : 7
+Epoch 7: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 60%|██████    | 6/10 [03:05<01:46, 26.70s/it]Training loss: 0.2231571394807602
+ 70%|███████   | 7/10 [03:07<01:19, 26.66s/it]Validation loss: 0.008114613644364808
+F1 Score (Weighted): 1.0
+Epoch : 8
+Epoch 8: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 70%|███████   | 7/10 [03:32<01:19, 26.66s/it]Training loss: 0.20090622366025893
+ 80%|████████  | 8/10 [03:33<00:53, 26.65s/it]Validation loss: 0.007004585841463672
+F1 Score (Weighted): 1.0
+Epoch : 9
+Epoch 9: 100%|██████████| 49/49 [00:25<00:00,  1.94it/s]
+ 80%|████████  | 8/10 [03:58<00:53, 26.65s/it]Training loss: 0.20066088959289602
+ 90%|█████████ | 9/10 [04:00<00:26, 26.67s/it]Validation loss: 0.007139022410329845
+F1 Score (Weighted): 1.0
+Epoch : 10
+Epoch 10: 100%|██████████| 49/49 [00:25<00:00,  1.95it/s]
+ 90%|█████████ | 9/10 [04:25<00:26, 26.67s/it]Training loss: 0.19676025173797898
+100%|██████████| 10/10 [04:27<00:00, 26.70s/it]
+Validation loss: 0.007051683496683836
+F1 Score (Weighted): 1.0
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 2/2
+
+cuda
+file_dir: /content/drive/MyDrive/KPO/Classfication/DATA-SETS/
+File lists: ['21-123-1928_cleaned.json', '21-123-1931_cleaned.json', '21-123-1933_cleaned.json', '21-123-1934_cleaned.json', '21-123-1935_cleaned.json', '21-123-1936_cleaned.json', '21-123-1938_cleaned.json', '21-123-1940_cleaned.json', '21-123-1942_cleaned.json', '21-123-1911_cleaned.json', '21-123-1913_cleaned.json', '21-123-1944_cleaned.json']
+Processing: 21-123-1928_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1928_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'First Report of Injury/Incident'
+ 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical' 'First Report of Injury/Incident']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1 2]
+size: 910
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 155/155 [01:23<00:00,  1.85it/s]
+  0%|          | 0/10 [01:24<?, ?it/s]Training loss: 0.5589817173358413
+ 10%|█         | 1/10 [01:28<13:17, 88.66s/it]Validation loss: 0.3429609632917813
+F1 Score (Weighted): 0.9356337093563369
+Epoch : 2
+Epoch 2: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 10%|█         | 1/10 [02:51<13:17, 88.66s/it]Training loss: 0.24128350371479867
+ 20%|██        | 2/10 [02:56<11:45, 88.20s/it]Validation loss: 0.19112427785460437
+F1 Score (Weighted): 0.963662329419232
+Epoch : 3
+Epoch 3: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 20%|██        | 2/10 [04:19<11:45, 88.20s/it]Training loss: 0.16343765030089286
+ 30%|███       | 3/10 [04:24<10:15, 87.98s/it]Validation loss: 0.23852401793036343
+F1 Score (Weighted): 0.9569792351719334
+Epoch : 4
+Epoch 4: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 30%|███       | 3/10 [05:47<10:15, 87.98s/it]Training loss: 0.13139823049104082
+ 40%|████      | 4/10 [05:52<08:47, 87.89s/it]Validation loss: 0.22196812938532925
+F1 Score (Weighted): 0.9569792351719334
+Epoch : 5
+Epoch 5: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 40%|████      | 4/10 [07:15<08:47, 87.89s/it]Training loss: 0.116672261835136
+ 50%|█████     | 5/10 [07:19<07:19, 87.86s/it]Validation loss: 0.16827909354261855
+F1 Score (Weighted): 0.9640428498388507
+Epoch : 6
+Epoch 6: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 50%|█████     | 5/10 [08:42<07:19, 87.86s/it]Training loss: 0.06610012329709265
+ 60%|██████    | 6/10 [08:47<05:51, 87.79s/it]Validation loss: 0.20599008814419253
+F1 Score (Weighted): 0.9640428498388507
+Epoch : 7
+Epoch 7: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 60%|██████    | 6/10 [10:10<05:51, 87.79s/it]Training loss: 0.07029803425445402
+ 70%|███████   | 7/10 [10:15<04:23, 87.78s/it]Validation loss: 0.22765322507621022
+F1 Score (Weighted): 0.9569792351719334
+Epoch : 8
+Epoch 8: 100%|██████████| 155/155 [01:23<00:00,  1.86it/s]
+ 70%|███████   | 7/10 [11:38<04:23, 87.78s/it]Training loss: 0.05402659448182901
+ 80%|████████  | 8/10 [11:42<02:55, 87.74s/it]Validation loss: 0.19390252295852406
+F1 Score (Weighted): 0.9640428498388507
+Epoch : 9
+Epoch 9: 100%|██████████| 155/155 [01:23<00:00,  1.87it/s]
+ 80%|████████  | 8/10 [13:06<02:55, 87.74s/it]Training loss: 0.03569338975339047
+ 90%|█████████ | 9/10 [13:10<01:27, 87.72s/it]Validation loss: 0.1441235019447049
+F1 Score (Weighted): 0.9640428498388507
+Epoch : 10
+Epoch 10: 100%|██████████| 155/155 [01:23<00:00,  1.87it/s]
+ 90%|█████████ | 9/10 [14:33<01:27, 87.72s/it]Training loss: 0.028342465639692702
+100%|██████████| 10/10 [14:38<00:00, 87.82s/it]
+Validation loss: 0.15005786973363552
+F1 Score (Weighted): 0.9640428498388507
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 45/45
+
+Processing: 21-123-1931_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1931_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 151
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 26/26 [00:13<00:00,  1.88it/s]
+  0%|          | 0/10 [00:13<?, ?it/s]Training loss: 0.5003273147964277
+ 10%|█         | 1/10 [00:14<02:12, 14.76s/it]Validation loss: 0.5135842636227608
+F1 Score (Weighted): 0.755189972581277
+Epoch : 2
+Epoch 2: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 10%|█         | 1/10 [00:28<02:12, 14.76s/it]Training loss: 0.37292603224229354
+ 20%|██        | 2/10 [00:29<01:57, 14.66s/it]Validation loss: 0.5310499265789985
+F1 Score (Weighted): 0.755189972581277
+Epoch : 3
+Epoch 3: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 20%|██        | 2/10 [00:43<01:57, 14.66s/it]Training loss: 0.300731860101223
+ 30%|███       | 3/10 [00:43<01:42, 14.63s/it]Validation loss: 0.6328456088900566
+F1 Score (Weighted): 0.755189972581277
+Epoch : 4
+Epoch 4: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 30%|███       | 3/10 [00:57<01:42, 14.63s/it]Training loss: 0.4692837422570357
+ 40%|████      | 4/10 [00:58<01:27, 14.59s/it]Validation loss: 0.6365011408925056
+F1 Score (Weighted): 0.755189972581277
+Epoch : 5
+Epoch 5: 100%|██████████| 26/26 [00:13<00:00,  1.90it/s]
+ 40%|████      | 4/10 [01:12<01:27, 14.59s/it]Training loss: 0.5226521806863065
+ 50%|█████     | 5/10 [01:12<01:12, 14.55s/it]Validation loss: 0.542767534777522
+F1 Score (Weighted): 0.7917620137299771
+Epoch : 6
+Epoch 6: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 50%|█████     | 5/10 [01:26<01:12, 14.55s/it]Training loss: 0.3331688714142029
+ 60%|██████    | 6/10 [01:27<00:58, 14.54s/it]Validation loss: 0.41059225499629975
+F1 Score (Weighted): 0.755189972581277
+Epoch : 7
+Epoch 7: 100%|██████████| 26/26 [00:13<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [01:41<00:58, 14.54s/it]Training loss: 0.3009720156775214
+ 70%|███████   | 7/10 [01:41<00:43, 14.52s/it]Validation loss: 0.4510590687394142
+F1 Score (Weighted): 0.755189972581277
+Epoch : 8
+Epoch 8: 100%|██████████| 26/26 [00:13<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [01:55<00:43, 14.52s/it]Training loss: 0.32287613400974524
+ 80%|████████  | 8/10 [01:56<00:29, 14.52s/it]Validation loss: 0.47859078645706177
+F1 Score (Weighted): 0.755189972581277
+Epoch : 9
+Epoch 9: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 80%|████████  | 8/10 [02:10<00:29, 14.52s/it]Training loss: 0.3317113519431307
+ 90%|█████████ | 9/10 [02:11<00:14, 14.53s/it]Validation loss: 0.48663573414087297
+F1 Score (Weighted): 0.755189972581277
+Epoch : 10
+Epoch 10: 100%|██████████| 26/26 [00:13<00:00,  1.89it/s]
+ 90%|█████████ | 9/10 [02:24<00:14, 14.53s/it]Training loss: 0.320874517210401
+100%|██████████| 10/10 [02:25<00:00, 14.56s/it]
+Validation loss: 0.4853160157799721
+F1 Score (Weighted): 0.755189972581277
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 16/17
+
+Processing: 21-123-1933_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1933_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 207
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 35/35 [00:18<00:00,  1.91it/s]
+  0%|          | 0/10 [00:18<?, ?it/s]Training loss: 0.43404213786790413
+ 10%|█         | 1/10 [00:19<02:55, 19.53s/it]Validation loss: 0.06949997041374445
+F1 Score (Weighted): 0.9702020202020203
+Epoch : 2
+Epoch 2: 100%|██████████| 35/35 [00:18<00:00,  1.90it/s]
+ 10%|█         | 1/10 [00:37<02:55, 19.53s/it]Training loss: 0.015775934786402754
+ 20%|██        | 2/10 [00:39<02:36, 19.53s/it]Validation loss: 0.12072946056390979
+F1 Score (Weighted): 0.9702020202020203
+Epoch : 3
+Epoch 3: 100%|██████████| 35/35 [00:18<00:00,  1.89it/s]
+ 20%|██        | 2/10 [00:57<02:36, 19.53s/it]Training loss: 0.0006445197330322116
+ 30%|███       | 3/10 [00:58<02:17, 19.58s/it]Validation loss: 0.13432946543408825
+F1 Score (Weighted): 0.9375
+Epoch : 4
+Epoch 4: 100%|██████████| 35/35 [00:18<00:00,  1.87it/s]
+ 30%|███       | 3/10 [01:17<02:17, 19.58s/it]Training loss: 0.0004754909954499453
+ 40%|████      | 4/10 [01:18<01:58, 19.67s/it]Validation loss: 0.14393318484820025
+F1 Score (Weighted): 0.9375
+Epoch : 5
+Epoch 5: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 40%|████      | 4/10 [01:37<01:58, 19.67s/it]Training loss: 0.0004134899512532034
+ 50%|█████     | 5/10 [01:38<01:39, 19.81s/it]Validation loss: 0.14889530561881006
+F1 Score (Weighted): 0.9375
+Epoch : 6
+Epoch 6: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 50%|█████     | 5/10 [01:57<01:39, 19.81s/it]Training loss: 0.0003599024643855435
+ 60%|██████    | 6/10 [01:58<01:19, 19.89s/it]Validation loss: 0.15774504544554344
+F1 Score (Weighted): 0.9375
+Epoch : 7
+Epoch 7: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 60%|██████    | 6/10 [02:17<01:19, 19.89s/it]Training loss: 0.00032460107717530005
+ 70%|███████   | 7/10 [02:18<00:59, 19.94s/it]Validation loss: 0.16046481768717058
+F1 Score (Weighted): 0.9375
+Epoch : 8
+Epoch 8: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 70%|███████   | 7/10 [02:37<00:59, 19.94s/it]Training loss: 0.00031177175946400635
+ 80%|████████  | 8/10 [02:38<00:39, 19.96s/it]Validation loss: 0.16313322656372162
+F1 Score (Weighted): 0.9375
+Epoch : 9
+Epoch 9: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 80%|████████  | 8/10 [02:57<00:39, 19.96s/it]Training loss: 0.0002888236697929512
+ 90%|█████████ | 9/10 [02:58<00:19, 19.97s/it]Validation loss: 0.16426019717930881
+F1 Score (Weighted): 0.9375
+Epoch : 10
+Epoch 10: 100%|██████████| 35/35 [00:18<00:00,  1.85it/s]
+ 90%|█████████ | 9/10 [03:17<00:19, 19.97s/it]Training loss: 0.0002874940920654418
+100%|██████████| 10/10 [03:18<00:00, 19.86s/it]
+Validation loss: 0.1642846098360938
+F1 Score (Weighted): 0.9375
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 27/28
+
+Processing: 21-123-1934_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1934_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 268
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.9/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.9/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 46/46 [00:24<00:00,  1.89it/s]
+  0%|          | 0/10 [00:24<?, ?it/s]Training loss: 0.8121301216900896
+ 10%|█         | 1/10 [00:25<03:52, 25.85s/it]Validation loss: 0.2807000171807077
+F1 Score (Weighted): 0.8932002956393199
+Epoch : 2
+Epoch 2: 100%|██████████| 46/46 [00:24<00:00,  1.89it/s]
+ 10%|█         | 1/10 [00:50<03:52, 25.85s/it]Training loss: 0.3795011339952116
+ 20%|██        | 2/10 [00:51<03:26, 25.80s/it]Validation loss: 0.324582246856557
+F1 Score (Weighted): 0.8622739958742872
+Epoch : 3
+Epoch 3: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 20%|██        | 2/10 [01:15<03:26, 25.80s/it]Training loss: 0.5179980455786395
+ 30%|███       | 3/10 [01:17<02:59, 25.69s/it]Validation loss: 0.23850716774662337
+F1 Score (Weighted): 0.8932002956393199
+Epoch : 4
+Epoch 4: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 30%|███       | 3/10 [01:41<02:59, 25.69s/it]Training loss: 0.36584571433132107
+ 40%|████      | 4/10 [01:42<02:33, 25.64s/it]Validation loss: 0.30508438642654157
+F1 Score (Weighted): 0.8622739958742872
+Epoch : 5
+Epoch 5: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 40%|████      | 4/10 [02:06<02:33, 25.64s/it]Training loss: 0.4109928427636117
+ 50%|█████     | 5/10 [02:08<02:08, 25.63s/it]Validation loss: 0.27882791589945555
+F1 Score (Weighted): 0.8932002956393199
+Epoch : 6
+Epoch 6: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 50%|█████     | 5/10 [02:32<02:08, 25.63s/it]Training loss: 0.40653675397270883
+ 60%|██████    | 6/10 [02:33<01:42, 25.61s/it]Validation loss: 0.2730536848927538
+F1 Score (Weighted): 0.8932002956393199
+Epoch : 7
+Epoch 7: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [02:58<01:42, 25.61s/it]Training loss: 0.2994482012480781
+ 70%|███████   | 7/10 [02:59<01:16, 25.61s/it]Validation loss: 0.24226314512391886
+F1 Score (Weighted): 0.8932002956393199
+Epoch : 8
+Epoch 8: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [03:23<01:16, 25.61s/it]Training loss: 0.2921953269523447
+ 80%|████████  | 8/10 [03:25<00:51, 25.61s/it]Validation loss: 0.28050113427970147
+F1 Score (Weighted): 0.8622739958742872
+Epoch : 9
+Epoch 9: 100%|██████████| 46/46 [00:24<00:00,  1.90it/s]
+ 80%|████████  | 8/10 [03:49<00:51, 25.61s/it]Training loss: 0.291545138704469
+ 90%|█████████ | 9/10 [03:50<00:25, 25.61s/it]Validation loss: 0.2822404060926702
+F1 Score (Weighted): 0.8622739958742872
+Epoch : 10
+Epoch 10: 100%|██████████| 46/46 [00:24<00:00,  1.89it/s]
+ 90%|█████████ | 9/10 [04:15<00:25, 25.61s/it]Training loss: 0.3095067171076232
+100%|██████████| 10/10 [04:16<00:00, 25.64s/it]
+Validation loss: 0.2845784010779526
+F1 Score (Weighted): 0.8622739958742872
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 5/10
+cuda
+file_dir: /content/drive/MyDrive/KPO/Classfication/DATA-SETS/
+File lists: ['21-123-1935_cleaned.json', '21-123-1936_cleaned.json', '21-123-1938_cleaned.json', '21-123-1940_cleaned.json', '21-123-1942_cleaned.json', '21-123-1911_cleaned.json', '21-123-1913_cleaned.json', '21-123-1944_cleaned.json']
+Processing: 21-123-1935_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1935_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['First Report of Injury/Incident' 'Non-Medical/Others' 'Duplicates'
+ 'Medical']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['First Report of Injury/Incident' 'Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [2 0 1]
+size: 349
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Downloading (…)lve/main/config.json: 100%
+570/570 [00:00<00:00, 42.0kB/s]
+Downloading pytorch_model.bin: 100%
+440M/440M [00:01<00:00, 216MB/s]
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 60/60 [00:31<00:00,  1.88it/s]
+  0%|          | 0/10 [00:32<?, ?it/s]Training loss: 0.7385218092337406
+ 10%|█         | 1/10 [00:33<05:03, 33.71s/it]Validation loss: 0.6373917272483761
+F1 Score (Weighted): 0.8087229969920701
+Epoch : 2
+Epoch 2: 100%|██████████| 60/60 [00:29<00:00,  2.01it/s]
+ 10%|█         | 1/10 [01:03<05:03, 33.71s/it]Training loss: 0.3880471090087667
+ 20%|██        | 2/10 [01:05<04:19, 32.42s/it]Validation loss: 0.26465080995959317
+F1 Score (Weighted): 0.8615154237795747
+Epoch : 3
+Epoch 3: 100%|██████████| 60/60 [00:30<00:00,  1.96it/s]
+ 20%|██        | 2/10 [01:35<04:19, 32.42s/it]Training loss: 0.33409527232773445
+ 30%|███       | 3/10 [01:37<03:46, 32.39s/it]Validation loss: 0.28311646975238214
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 4
+Epoch 4: 100%|██████████| 60/60 [00:31<00:00,  1.91it/s]
+ 30%|███       | 3/10 [02:08<03:46, 32.39s/it]Training loss: 0.2733746964659076
+ 40%|████      | 4/10 [02:10<03:15, 32.66s/it]Validation loss: 0.22134634956653992
+F1 Score (Weighted): 0.8868113019056415
+Epoch : 5
+Epoch 5: 100%|██████████| 60/60 [00:30<00:00,  1.94it/s]
+ 40%|████      | 4/10 [02:41<03:15, 32.66s/it]Training loss: 0.30592577989446
+ 50%|█████     | 5/10 [02:43<02:43, 32.67s/it]Validation loss: 0.26584191975945776
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 6
+Epoch 6: 100%|██████████| 60/60 [00:31<00:00,  1.93it/s]
+ 50%|█████     | 5/10 [03:14<02:43, 32.67s/it]Training loss: 0.2664357325290136
+ 60%|██████    | 6/10 [03:16<02:10, 32.75s/it]Validation loss: 0.21866513261127032
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 7
+Epoch 7: 100%|██████████| 60/60 [00:31<00:00,  1.93it/s]
+ 60%|██████    | 6/10 [03:47<02:10, 32.75s/it]Training loss: 0.2383478505750342
+ 70%|███████   | 7/10 [03:49<01:38, 32.76s/it]Validation loss: 0.24950397828202273
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 8
+Epoch 8: 100%|██████████| 60/60 [00:31<00:00,  1.93it/s]
+ 70%|███████   | 7/10 [04:20<01:38, 32.76s/it]Training loss: 0.26193831408260543
+ 80%|████████  | 8/10 [04:21<01:05, 32.78s/it]Validation loss: 0.21496725475563752
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 9
+Epoch 9: 100%|██████████| 60/60 [00:31<00:00,  1.93it/s]
+ 80%|████████  | 8/10 [04:53<01:05, 32.78s/it]Training loss: 0.23607368217247615
+ 90%|█████████ | 9/10 [04:54<00:32, 32.82s/it]Validation loss: 0.2238212248776108
+F1 Score (Weighted): 0.9136268343815515
+Epoch : 10
+Epoch 10: 100%|██████████| 60/60 [00:31<00:00,  1.93it/s]
+ 90%|█████████ | 9/10 [05:25<00:32, 32.82s/it]Training loss: 0.23585638959048083
+100%|██████████| 10/10 [05:27<00:00, 32.76s/it]
+Validation loss: 0.22746654484548012
+F1 Score (Weighted): 0.9136268343815515
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 4/8
+
+Processing: 21-123-1936_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1936_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates'
+ 'First Report of Injury/Incident']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical' 'First Report of Injury/Incident']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1 2]
+size: 228
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+  0%|          | 0/10 [00:20<?, ?it/s]Training loss: 0.5912418211989391
+ 10%|█         | 1/10 [00:21<03:14, 21.63s/it]Validation loss: 0.5933301897519934
+F1 Score (Weighted): 0.847424684159378
+Epoch : 2
+Epoch 2: 100%|██████████| 39/39 [00:20<00:00,  1.91it/s]
+ 10%|█         | 1/10 [00:42<03:14, 21.63s/it]Training loss: 0.458582822042398
+ 20%|██        | 2/10 [00:43<02:52, 21.60s/it]Validation loss: 0.300717151590756
+F1 Score (Weighted): 0.847424684159378
+Epoch : 3
+Epoch 3: 100%|██████████| 39/39 [00:20<00:00,  1.93it/s]
+ 20%|██        | 2/10 [01:03<02:52, 21.60s/it]Training loss: 0.5096481823443005
+ 30%|███       | 3/10 [01:04<02:30, 21.48s/it]Validation loss: 0.36578975804150105
+F1 Score (Weighted): 0.847424684159378
+Epoch : 4
+Epoch 4: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+ 30%|███       | 3/10 [01:24<02:30, 21.48s/it]Training loss: 0.38212546734855724
+ 40%|████      | 4/10 [01:26<02:08, 21.48s/it]Validation loss: 0.28923563020569937
+F1 Score (Weighted): 0.847424684159378
+Epoch : 5
+Epoch 5: 100%|██████████| 39/39 [00:20<00:00,  1.93it/s]
+ 40%|████      | 4/10 [01:46<02:08, 21.48s/it]Training loss: 0.37449784396598357
+ 50%|█████     | 5/10 [01:47<01:47, 21.45s/it]Validation loss: 0.2919635357601302
+F1 Score (Weighted): 0.847424684159378
+Epoch : 6
+Epoch 6: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+ 50%|█████     | 5/10 [02:07<01:47, 21.45s/it]Training loss: 0.3862870548424932
+ 60%|██████    | 6/10 [02:08<01:25, 21.46s/it]Validation loss: 0.28736968657800127
+F1 Score (Weighted): 0.847424684159378
+Epoch : 7
+Epoch 7: 100%|██████████| 39/39 [00:20<00:00,  1.93it/s]
+ 60%|██████    | 6/10 [02:29<01:25, 21.46s/it]Training loss: 0.3538049837195267
+ 70%|███████   | 7/10 [02:30<01:04, 21.42s/it]Validation loss: 0.28563620362962994
+F1 Score (Weighted): 0.847424684159378
+Epoch : 8
+Epoch 8: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+ 70%|███████   | 7/10 [02:50<01:04, 21.42s/it]Training loss: 0.3734241568704303
+ 80%|████████  | 8/10 [02:51<00:42, 21.43s/it]Validation loss: 0.2854884681957109
+F1 Score (Weighted): 0.847424684159378
+Epoch : 9
+Epoch 9: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+ 80%|████████  | 8/10 [03:11<00:42, 21.43s/it]Training loss: 0.3713959765035468
+ 90%|█████████ | 9/10 [03:13<00:21, 21.43s/it]Validation loss: 0.28589112630912233
+F1 Score (Weighted): 0.847424684159378
+Epoch : 10
+Epoch 10: 100%|██████████| 39/39 [00:20<00:00,  1.92it/s]
+ 90%|█████████ | 9/10 [03:33<00:21, 21.43s/it]Training loss: 0.355860125942108
+100%|██████████| 10/10 [03:34<00:00, 21.46s/it]
+Validation loss: 0.285399538065706
+F1 Score (Weighted): 0.847424684159378
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 22/22
+
+Processing: 21-123-1938_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1938_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'First Report of Injury/Incident' 'Medical'
+ 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'First Report of Injury/Incident' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 2 1]
+size: 622
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 106/106 [00:56<00:00,  1.89it/s]
+  0%|          | 0/10 [00:56<?, ?it/s]Training loss: 0.2526854323662536
+ 10%|█         | 1/10 [00:59<08:53, 59.30s/it]Validation loss: 0.13905189288657552
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 2
+Epoch 2: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 10%|█         | 1/10 [01:55<08:53, 59.30s/it]Training loss: 0.159317450047106
+ 20%|██        | 2/10 [01:58<07:52, 59.05s/it]Validation loss: 0.16079864075627961
+F1 Score (Weighted): 0.9575624421831638
+Epoch : 3
+Epoch 3: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 20%|██        | 2/10 [02:54<07:52, 59.05s/it]Training loss: 0.12964414485306303
+ 30%|███       | 3/10 [02:57<06:52, 58.96s/it]Validation loss: 0.16072551083849057
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 4
+Epoch 4: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 30%|███       | 3/10 [03:52<06:52, 58.96s/it]Training loss: 0.11188638907196088
+ 40%|████      | 4/10 [03:55<05:53, 58.92s/it]Validation loss: 0.1136270221154279
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 5
+Epoch 5: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 40%|████      | 4/10 [04:51<05:53, 58.92s/it]Training loss: 0.10260432645517076
+ 50%|█████     | 5/10 [04:54<04:54, 58.90s/it]Validation loss: 0.13442937946743577
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 6
+Epoch 6: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 50%|█████     | 5/10 [05:50<04:54, 58.90s/it]Training loss: 0.09525987176819845
+ 60%|██████    | 6/10 [05:53<03:55, 58.87s/it]Validation loss: 0.13374648919163615
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 7
+Epoch 7: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [06:49<03:55, 58.87s/it]Training loss: 0.09696097504940622
+ 70%|███████   | 7/10 [06:52<02:56, 58.87s/it]Validation loss: 0.13767317589678751
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 8
+Epoch 8: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [07:48<02:56, 58.87s/it]Training loss: 0.09534031921450734
+ 80%|████████  | 8/10 [07:51<01:57, 58.89s/it]Validation loss: 0.1369755277777777
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 9
+Epoch 9: 100%|██████████| 106/106 [00:55<00:00,  1.89it/s]
+ 80%|████████  | 8/10 [08:47<01:57, 58.89s/it]Training loss: 0.10098678417303951
+ 90%|█████████ | 9/10 [08:50<00:58, 58.93s/it]Validation loss: 0.13578451410438375
+F1 Score (Weighted): 0.9735198889916744
+Epoch : 10
+Epoch 10: 100%|██████████| 106/106 [00:55<00:00,  1.90it/s]
+ 90%|█████████ | 9/10 [09:46<00:58, 58.93s/it]Training loss: 0.0923944590110793
+100%|██████████| 10/10 [09:49<00:00, 58.93s/it]
+Validation loss: 0.13226252024086485
+F1 Score (Weighted): 0.9735198889916744
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 1/3
+
+Processing: 21-123-1940_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1940_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 1043
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+  0%|          | 0/10 [01:33<?, ?it/s]Training loss: 0.38935053941114867
+ 10%|█         | 1/10 [01:38<14:45, 98.36s/it]Validation loss: 0.3687385880111833
+F1 Score (Weighted): 0.7544114574684074
+Epoch : 2
+Epoch 2: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 10%|█         | 1/10 [03:11<14:45, 98.36s/it]Training loss: 0.33851571734818064
+ 20%|██        | 2/10 [03:16<13:06, 98.28s/it]Validation loss: 0.4388726344368479
+F1 Score (Weighted): 0.7544114574684074
+Epoch : 3
+Epoch 3: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 20%|██        | 2/10 [04:49<13:06, 98.28s/it]Training loss: 0.3327764976791595
+ 30%|███       | 3/10 [04:54<11:27, 98.17s/it]Validation loss: 0.3614901832843316
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 4
+Epoch 4: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 30%|███       | 3/10 [06:27<11:27, 98.17s/it]Training loss: 0.3210994172914888
+ 40%|████      | 4/10 [06:32<09:48, 98.16s/it]Validation loss: 0.3777071586846432
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 5
+Epoch 5: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 40%|████      | 4/10 [08:06<09:48, 98.16s/it]Training loss: 0.3221043842140614
+ 50%|█████     | 5/10 [08:11<08:11, 98.23s/it]Validation loss: 0.3592523272964172
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 6
+Epoch 6: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 50%|█████     | 5/10 [09:44<08:11, 98.23s/it]Training loss: 0.3218460799807361
+ 60%|██████    | 6/10 [09:49<06:33, 98.30s/it]Validation loss: 0.35396032856442616
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 7
+Epoch 7: 100%|██████████| 178/178 [01:33<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [11:23<06:33, 98.30s/it]Training loss: 0.3209584150621125
+ 70%|███████   | 7/10 [11:28<04:55, 98.39s/it]Validation loss: 0.3796174823837646
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 8
+Epoch 8: 100%|██████████| 178/178 [01:33<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [13:01<04:55, 98.39s/it]Training loss: 0.32380957503180446
+ 80%|████████  | 8/10 [13:06<03:17, 98.53s/it]Validation loss: 0.36390210568242765
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 9
+Epoch 9: 100%|██████████| 178/178 [01:33<00:00,  1.90it/s]
+ 80%|████████  | 8/10 [14:40<03:17, 98.53s/it]Training loss: 0.31925892349722695
+ 90%|█████████ | 9/10 [14:45<01:38, 98.56s/it]Validation loss: 0.3633536222987459
+F1 Score (Weighted): 0.7630375916769899
+Epoch : 10
+Epoch 10: 100%|██████████| 178/178 [01:33<00:00,  1.91it/s]
+ 90%|█████████ | 9/10 [16:19<01:38, 98.56s/it]Training loss: 0.3191617601661481
+100%|██████████| 10/10 [16:24<00:00, 98.41s/it]
+Validation loss: 0.3612822476989095
+F1 Score (Weighted): 0.7630375916769899
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 25/58
+cuda
+file_dir: /content/drive/MyDrive/KPO/Classfication/DATA-SETS/
+File lists: ['21-123-1942_cleaned.json', '21-123-1911_cleaned.json', '21-123-1913_cleaned.json', '21-123-1944_cleaned.json']
+Processing: 21-123-1942_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1942_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Medical' 'Non-Medical/Others' 'Duplicates'
+ 'First Report of Injury/Incident']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Medical' 'Non-Medical/Others' 'First Report of Injury/Incident']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [1 0 2]
+size: 399
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+  0%|          | 0/10 [00:35<?, ?it/s]Training loss: 0.24795022620310192
+ 10%|█         | 1/10 [00:37<05:39, 37.73s/it]Validation loss: 0.094426650791623
+F1 Score (Weighted): 0.983319409635199
+Epoch : 2
+Epoch 2: 100%|██████████| 68/68 [00:35<00:00,  1.92it/s]
+ 10%|█         | 1/10 [01:13<05:39, 37.73s/it]Training loss: 0.05196772956311607
+ 20%|██        | 2/10 [01:15<05:00, 37.54s/it]Validation loss: 0.0013422358897514641
+F1 Score (Weighted): 1.0
+Epoch : 3
+Epoch 3: 100%|██████████| 68/68 [00:35<00:00,  1.92it/s]
+ 20%|██        | 2/10 [01:50<05:00, 37.54s/it]Training loss: 0.026900085115759045
+ 30%|███       | 3/10 [01:52<04:22, 37.45s/it]Validation loss: 0.024565563774861705
+F1 Score (Weighted): 0.983319409635199
+Epoch : 4
+Epoch 4: 100%|██████████| 68/68 [00:35<00:00,  1.92it/s]
+ 30%|███       | 3/10 [02:27<04:22, 37.45s/it]Training loss: 0.010170879765235655
+ 40%|████      | 4/10 [02:29<03:44, 37.45s/it]Validation loss: 0.00021810395446664188
+F1 Score (Weighted): 1.0
+Epoch : 5
+Epoch 5: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+ 40%|████      | 4/10 [03:05<03:44, 37.45s/it]Training loss: 0.009386906251379782
+ 50%|█████     | 5/10 [03:07<03:07, 37.47s/it]Validation loss: 0.0002300732479246411
+F1 Score (Weighted): 1.0
+Epoch : 6
+Epoch 6: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+ 50%|█████     | 5/10 [03:42<03:07, 37.47s/it]Training loss: 0.001206624102076817
+ 60%|██████    | 6/10 [03:44<02:29, 37.48s/it]Validation loss: 0.00019481965622010952
+F1 Score (Weighted): 1.0
+Epoch : 7
+Epoch 7: 100%|██████████| 68/68 [00:35<00:00,  1.92it/s]
+ 60%|██████    | 6/10 [04:20<02:29, 37.48s/it]Training loss: 0.0005173534644949113
+ 70%|███████   | 7/10 [04:22<01:52, 37.44s/it]Validation loss: 0.00025193640491731156
+F1 Score (Weighted): 1.0
+Epoch : 8
+Epoch 8: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+ 70%|███████   | 7/10 [04:57<01:52, 37.44s/it]Training loss: 0.00048072425798797183
+ 80%|████████  | 8/10 [04:59<01:14, 37.47s/it]Validation loss: 0.00017110684469419843
+F1 Score (Weighted): 1.0
+Epoch : 9
+Epoch 9: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+ 80%|████████  | 8/10 [05:35<01:14, 37.47s/it]Training loss: 0.0004557599725504748
+ 90%|█████████ | 9/10 [05:37<00:37, 37.51s/it]Validation loss: 0.00015936472724812725
+F1 Score (Weighted): 1.0
+Epoch : 10
+Epoch 10: 100%|██████████| 68/68 [00:35<00:00,  1.91it/s]
+ 90%|█████████ | 9/10 [06:13<00:37, 37.51s/it]Training loss: 0.0004274989587429445
+100%|██████████| 10/10 [06:14<00:00, 37.50s/it]
+Validation loss: 0.0001545828642216899
+F1 Score (Weighted): 1.0
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 31/31
+
+Processing: 21-123-1911_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1911_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Non-Medical/Others' 'Medical' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Non-Medical/Others' 'Medical']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [0 1]
+size: 644
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 110/110 [00:58<00:00,  1.89it/s]
+  0%|          | 0/10 [00:58<?, ?it/s]Training loss: 0.17712709306645344
+ 10%|█         | 1/10 [01:01<09:13, 61.46s/it]Validation loss: 0.05418017309712013
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 2
+Epoch 2: 100%|██████████| 110/110 [00:57<00:00,  1.91it/s]
+ 10%|█         | 1/10 [01:59<09:13, 61.46s/it]Training loss: 0.12175136495841964
+ 20%|██        | 2/10 [02:02<08:08, 61.12s/it]Validation loss: 0.050372361786867256
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 3
+Epoch 3: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 20%|██        | 2/10 [03:00<08:08, 61.12s/it]Training loss: 0.08728070847269423
+ 30%|███       | 3/10 [03:03<07:07, 61.10s/it]Validation loss: 0.053704570165791665
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 4
+Epoch 4: 100%|██████████| 110/110 [00:58<00:00,  1.89it/s]
+ 30%|███       | 3/10 [04:01<07:07, 61.10s/it]Training loss: 0.08213440170359469
+ 40%|████      | 4/10 [04:04<06:06, 61.16s/it]Validation loss: 0.051839499258858265
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 5
+Epoch 5: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 40%|████      | 4/10 [05:02<06:06, 61.16s/it]Training loss: 0.08006610855412542
+ 50%|█████     | 5/10 [05:05<05:05, 61.12s/it]Validation loss: 0.052813160906953274
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 6
+Epoch 6: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 50%|█████     | 5/10 [06:03<05:05, 61.12s/it]Training loss: 0.08412612384960415
+ 60%|██████    | 6/10 [06:06<04:04, 61.08s/it]Validation loss: 0.04976963381704991
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 7
+Epoch 7: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 60%|██████    | 6/10 [07:04<04:04, 61.08s/it]Training loss: 0.08120165252694278
+ 70%|███████   | 7/10 [07:07<03:03, 61.05s/it]Validation loss: 0.050009018590026245
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 8
+Epoch 8: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 70%|███████   | 7/10 [08:05<03:03, 61.05s/it]Training loss: 0.08064852883511445
+ 80%|████████  | 8/10 [08:08<02:02, 61.00s/it]Validation loss: 0.04991104417294991
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 9
+Epoch 9: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 80%|████████  | 8/10 [09:06<02:02, 61.00s/it]Training loss: 0.08150350222002255
+ 90%|█████████ | 9/10 [09:09<01:00, 61.00s/it]Validation loss: 0.05032536215148866
+F1 Score (Weighted): 0.9889819095398235
+Epoch : 10
+Epoch 10: 100%|██████████| 110/110 [00:57<00:00,  1.90it/s]
+ 90%|█████████ | 9/10 [10:07<01:00, 61.00s/it]Training loss: 0.08076020188567451
+100%|██████████| 10/10 [10:10<00:00, 61.06s/it]
+Validation loss: 0.0496606947555847
+F1 Score (Weighted): 0.9889819095398235
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 3/4
+
+Processing: 21-123-1913_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1913_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['First Report of Injury/Incident' 'Medical' 'Non-Medical/Others'
+ 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['First Report of Injury/Incident' 'Medical' 'Non-Medical/Others']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [2 1 0]
+size: 318
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 54/54 [00:28<00:00,  1.90it/s]
+  0%|          | 0/10 [00:28<?, ?it/s]Training loss: 0.5196615052889144
+ 10%|█         | 1/10 [00:30<04:31, 30.12s/it]Validation loss: 0.2001309878061875
+F1 Score (Weighted): 0.9418279970215936
+Epoch : 2
+Epoch 2: 100%|██████████| 54/54 [00:28<00:00,  1.91it/s]
+ 10%|█         | 1/10 [00:58<04:31, 30.12s/it]Training loss: 0.24580702258390374
+ 20%|██        | 2/10 [00:59<03:59, 29.94s/it]Validation loss: 0.39940324800190863
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 3
+Epoch 3: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 20%|██        | 2/10 [01:28<03:59, 29.94s/it]Training loss: 0.14545347018833532
+ 30%|███       | 3/10 [01:29<03:28, 29.83s/it]Validation loss: 0.1477643223544874
+F1 Score (Weighted): 0.9418279970215936
+Epoch : 4
+Epoch 4: 100%|██████████| 54/54 [00:28<00:00,  1.91it/s]
+ 30%|███       | 3/10 [01:57<03:28, 29.83s/it]Training loss: 0.13595495416302583
+ 40%|████      | 4/10 [01:59<02:59, 29.84s/it]Validation loss: 0.23396132300040334
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 5
+Epoch 5: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 40%|████      | 4/10 [02:27<02:59, 29.84s/it]Training loss: 0.09387403119439518
+ 50%|█████     | 5/10 [02:29<02:28, 29.79s/it]Validation loss: 0.24528543064734548
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 6
+Epoch 6: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 50%|█████     | 5/10 [02:57<02:28, 29.79s/it]Training loss: 0.090103135057116
+ 60%|██████    | 6/10 [02:58<01:59, 29.77s/it]Validation loss: 0.3349616680006875
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 7
+Epoch 7: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 60%|██████    | 6/10 [03:27<01:59, 29.77s/it]Training loss: 0.10814378369131764
+ 70%|███████   | 7/10 [03:28<01:29, 29.75s/it]Validation loss: 0.23360540281792055
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 8
+Epoch 8: 100%|██████████| 54/54 [00:28<00:00,  1.91it/s]
+ 70%|███████   | 7/10 [03:56<01:29, 29.75s/it]Training loss: 0.10308961391462988
+ 80%|████████  | 8/10 [03:58<00:59, 29.79s/it]Validation loss: 0.2647817852499429
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 9
+Epoch 9: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 80%|████████  | 8/10 [04:26<00:59, 29.79s/it]Training loss: 0.09105945477656657
+ 90%|█████████ | 9/10 [04:28<00:29, 29.77s/it]Validation loss: 0.2658988950704952
+F1 Score (Weighted): 0.9304612870789342
+Epoch : 10
+Epoch 10: 100%|██████████| 54/54 [00:28<00:00,  1.92it/s]
+ 90%|█████████ | 9/10 [04:56<00:29, 29.77s/it]Training loss: 0.0911783406305336
+100%|██████████| 10/10 [04:58<00:00, 29.80s/it]
+Validation loss: 0.24725595694799268
+F1 Score (Weighted): 0.9304612870789342
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 7/7
+
+Processing: 21-123-1944_cleaned.json /content/drive/MyDrive/KPO/Classfication/DATA-SETS/MAY/21-123-1944_cleaned.json
+Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object') ['Medical' 'Non-Medical/Others' 'Duplicates']
+label_path:./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json
+	 ./drive/MyDrive/KPO/Classfication/BERT/MODELS/PAGE_CATEGORY_ImageText_label_dict.json exists
+target labels: category
+unique labels: ['Medical' 'Non-Medical/Others']
+New category keys to be added:[]
+if label_dict: {'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+Label dict#####{'Non-Medical/Others': 0, 'Medical': 1, 'First Report of Injury/Incident': 2, 'Other Persons': 3}
+df.columns: Index(['pagenumber', 'category', 'ImageText', 'Isstart', 'Type'], dtype='object')
+Unique Labels: [1 0]
+size: 560
+Loaded tokenizer from ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer
+/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py:2364: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+Truncation was not explicitly activated but `max_length` is provided a specific value, please use `truncation=True` to explicitly truncate examples to max length. Defaulting to 'longest_first' truncation strategy. If you encode pairs of sequences (GLUE-style) with the tokenizer you can select this strategy more precisely by providing a specific strategy to `truncation`.
+dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
+<class 'torch.utils.data.dataset.TensorDataset'>
+MODEL_STORE: ./drive/MyDrive/KPO/Classfication/BERT/MODELS
+Model name string:#Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN
+ files are ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN_512_tokenizer', 'PAGE_CATEGORY_ImageText_label_dict.json', 'Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model', '_valid_logs.json']
+file model ./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+file status: True
+./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+model_files: ['Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model']
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertForSequenceClassification: ['cls.predictions.transform.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.weight', 'classifier.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+loading model file:./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+/usr/local/lib/python3.10/dist-packages/transformers/optimization.py:407: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+  0%|          | 0/10 [00:00<?, ?it/s]Epoch : 1
+Epoch 1: 100%|██████████| 96/96 [00:49<00:00,  1.93it/s]
+  0%|          | 0/10 [00:49<?, ?it/s]Training loss: 0.48734810956132907
+ 10%|█         | 1/10 [00:52<07:54, 52.72s/it]Validation loss: 0.3473305826020591
+F1 Score (Weighted): 0.7959183673469388
+Epoch : 2
+Epoch 2: 100%|██████████| 96/96 [00:49<00:00,  1.93it/s]
+ 10%|█         | 1/10 [01:42<07:54, 52.72s/it]Training loss: 0.40382956723624375
+ 20%|██        | 2/10 [01:45<07:00, 52.54s/it]Validation loss: 0.3868471724392079
+F1 Score (Weighted): 0.6740524781341108
+Epoch : 3
+Epoch 3: 100%|██████████| 96/96 [00:49<00:00,  1.93it/s]
+ 20%|██        | 2/10 [02:34<07:00, 52.54s/it]Training loss: 0.3630686590662056
+ 30%|███       | 3/10 [02:37<06:07, 52.55s/it]Validation loss: 0.36075630297487166
+F1 Score (Weighted): 0.6740524781341108
+Epoch : 4
+Epoch 4: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 30%|███       | 3/10 [03:27<06:07, 52.55s/it]Training loss: 0.3494029127048937
+ 40%|████      | 4/10 [03:30<05:14, 52.46s/it]Validation loss: 0.33876124650637124
+F1 Score (Weighted): 0.7959183673469388
+Epoch : 5
+Epoch 5: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 40%|████      | 4/10 [04:19<05:14, 52.46s/it]Training loss: 0.36156042983763353
+ 50%|█████     | 5/10 [04:22<04:21, 52.38s/it]Validation loss: 0.36310411270139464
+F1 Score (Weighted): 0.6740524781341108
+Epoch : 6
+Epoch 6: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 50%|█████     | 5/10 [05:11<04:21, 52.38s/it]Training loss: 0.3591794921367182
+ 60%|██████    | 6/10 [05:14<03:29, 52.33s/it]Validation loss: 0.3380534401649664
+F1 Score (Weighted): 0.7959183673469388
+Epoch : 7
+Epoch 7: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 60%|██████    | 6/10 [06:04<03:29, 52.33s/it]Training loss: 0.3603928028478549
+ 70%|███████   | 7/10 [06:06<02:36, 52.31s/it]Validation loss: 0.3495598543428487
+F1 Score (Weighted): 0.6740524781341108
+Epoch : 8
+Epoch 8: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 70%|███████   | 7/10 [06:56<02:36, 52.31s/it]Training loss: 0.3547526194403569
+ 80%|████████  | 8/10 [06:59<01:44, 52.30s/it]Validation loss: 0.3450334301091703
+F1 Score (Weighted): 0.7959183673469388
+Epoch : 9
+Epoch 9: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 80%|████████  | 8/10 [07:48<01:44, 52.30s/it]Training loss: 0.3516625144648818
+ 90%|█████████ | 9/10 [07:51<00:52, 52.29s/it]Validation loss: 0.3437417826995336
+F1 Score (Weighted): 0.7959183673469388
+Epoch : 10
+Epoch 10: 100%|██████████| 96/96 [00:49<00:00,  1.94it/s]
+ 90%|█████████ | 9/10 [08:40<00:52, 52.29s/it]Training loss: 0.3472356358567292
+100%|██████████| 10/10 [08:43<00:00, 52.36s/it]
+Validation loss: 0.33979226533761797
+F1 Score (Weighted): 0.7959183673469388
+Model device conversation
+Saving the model :./drive/MyDrive/KPO/Classfication/BERT/MODELS/Classfication_PAGE_CATEGORY_512_BERT_BOUNDRY_PRE_TRAIN.model
+Model saved successfully
+Class: Non-Medical/Others
+Accuracy: 48/48
